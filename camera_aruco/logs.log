@@ -1,0 +1,6 @@
+[15:37:16-xbee] (serial) connexion ouverte avec succès sur le port /dev/ttyUSB0 - baudrate : 9600 - parité : 1
+[15:37:19-xbee] (config AT) entrée en mode AT en cours...
+[15:37:20-xbee] /!\ (config AT) erreur -401 : impossible d'entrer dans le mode AT
+[15:37:20-xbee] (serial) buffer Rx nettoyé avec succès
+[15:37:20-xbee] (serial) connexion série fermée avec succès
+[15:37:20-xbee] (serial) /!\ erreur -502 : impossible d'ouvrir le port /dev/ttyAMA0 - baudrate : 9600 - parité : 0
