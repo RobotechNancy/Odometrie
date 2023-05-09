@@ -7,6 +7,7 @@
 
 #include "camera.h"
 
+
 typedef std::function<void(const std::vector<int>&, const std::vector<cv::Vec3d>&, const std::vector<cv::Vec3d>&)> callback_t;
 
 /*!
@@ -15,7 +16,7 @@ typedef std::function<void(const std::vector<int>&, const std::vector<cv::Vec3d>
  */
 class Estimation {
 public:
-    explicit Estimation(float markerLen, const char* camera_param_path);
+    explicit Estimation(const char* detectorParamsPath, const char* cameraParamPath, float markerLen);
 
     void lock(const callback_t& callback);
     [[noreturn]] uint8_t start();

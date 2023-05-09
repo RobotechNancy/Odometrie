@@ -5,7 +5,7 @@
 #include "camera.h"
 
 
-Camera::Camera() {
+Camera::Camera(const char* detectorParamPath) {
     cap = cv::VideoCapture(0);
 
     if (!cap.isOpened()) {
@@ -13,7 +13,7 @@ Camera::Camera() {
         exit(-1);
     }
 
-    cv::FileStorage fs("../detector_params.yml", cv::FileStorage::READ);
+    cv::FileStorage fs(detectorParamPath, cv::FileStorage::READ);
 
     if (!fs.isOpened()) {
         std::cerr << "Impossible d'ouvrir \"detector_params.yml\"" << std::endl;

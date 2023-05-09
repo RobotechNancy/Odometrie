@@ -5,10 +5,10 @@
 #include "estimation.h"
 
 
-Estimation::Estimation(float markerLen, const char* camera_param_path) {
-    this->markerLen = markerLen;
-
-    cv::FileStorage fs(camera_param_path, cv::FileStorage::READ);
+Estimation::Estimation(const char* detectorParamsPath, const char* cameraParamPath, float markerLen):
+    camera(detectorParamsPath), markerLen(markerLen)
+{
+    cv::FileStorage fs(cameraParamPath, cv::FileStorage::READ);
 
     fs["camera_matrix"] >> cameraMatrix;
     fs["distortion_coefficients"] >> distCoeffs;

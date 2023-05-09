@@ -14,7 +14,7 @@
 
 class Camera {
 public:
-    Camera();
+    explicit Camera(const char* detectorParamPath);
 
     cv::VideoCapture cap;
     cv::aruco::ArucoDetector detector;

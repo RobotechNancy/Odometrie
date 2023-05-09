@@ -5,15 +5,7 @@
 #include "calibration.h"
 
 
-Calibration::Calibration(uint8_t markersX, uint8_t markersY, uint8_t markerLen, uint8_t markerSep) {
-    this->markersX = markersX;
-    this->markersY = markersY;
-    this->markerLen = markerLen;
-    this->markerSep = markerSep;
-}
-
-
-void Calibration::boardToPng(const std::string &path) {
+void boardToPng(const std::string &path, uint8_t markersX, uint8_t markersY, uint8_t markerLen, uint8_t markerSep) {
     int margins = markerSep;
     int borderBits = 1;
 
@@ -35,7 +27,7 @@ void Calibration::boardToPng(const std::string &path) {
 }
 
 
-uint8_t Calibration::start() {
+uint8_t calibrate(Camera camera, uint8_t markersX, uint8_t markersY, uint8_t markerLen, uint8_t markerSep) {
     cv::Size imgSize;
     cv::Mat img, imgCopy;
 
