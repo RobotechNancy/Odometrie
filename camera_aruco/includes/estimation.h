@@ -15,10 +15,9 @@ typedef std::function<void(const std::vector<int>&, const std::vector<cv::Vec3d>
  */
 class Estimation {
 public:
-    explicit Estimation(float markerLen);
+    explicit Estimation(float markerLen, const char* camera_param_path);
 
     void lock(const callback_t& callback);
-
     [[noreturn]] uint8_t start();
 private:
     Camera camera;

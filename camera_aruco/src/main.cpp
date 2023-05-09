@@ -11,7 +11,7 @@ void print_help() {
     std::cout << "Utilisation :\n"
                  "      ./aruco board <markersX> <markersY> <markerLenght> <markerSeparation>\n"
                  "      ./aruco calib <markersX> <markersY> <markerLenght> <markerSeparation>\n"
-                 "      ./aruco <markerLength> <port>" << std::endl;
+                 "      ./aruco <markerLength> <port> <camera_param_path>" << std::endl;
 }
 
 
@@ -38,12 +38,14 @@ int main(int argc, char** argv) {
     if (argc == 3)
         port = argv[2];
 
-    Estimation estimation(markerLen);
+    const char* camera_param_path = "../camera_param.yml";
+    if (argc == 4)
+        camera_param_path = argv[3];
 
     XBee xbee(port, XB_ADR_ROBOT_01);
-    int status = xbee.openSerialConnection();
+    Estimation estimation(markerLen, camera_param_path);
 
-    if (status == 0) {
+    if (xbee.openSerialConnection() == 0) {
         xbee.subscribe(XB_FCT_GET_ARUCO_POS, [&xbee, &estimation](const frame_t& frame) {
             estimation.lock([&xbee, &frame](auto ids, auto rVecs, auto tVecs) {
                 std::vector<uint8_t> data;
