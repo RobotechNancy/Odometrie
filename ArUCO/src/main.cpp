@@ -42,7 +42,7 @@ int main(int argc, char** argv) {
 
                 for (int i=0; i < ids.size(); i++) {
                     data.push_back(ids[i]);
-                    data.push_back(rVecs[i][0]);
+                    data.push_back(rVecs[i][2]);
                     data.push_back(tVecs[i][0]);
                     data.push_back(tVecs[i][1]);
                 };

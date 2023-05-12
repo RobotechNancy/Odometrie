@@ -17,7 +17,7 @@ Estimation::Estimation(const char* detectorParamsPath, const char* cameraParamPa
 }
 
 
-[[noreturn]] uint8_t Estimation::start() {
+void Estimation::start() {
     cv::Mat imageCopy;
 
     while (true) {
@@ -47,6 +47,7 @@ Estimation::Estimation(const char* detectorParamsPath, const char* cameraParamPa
                           << " Tx=" << tVecs[i][0] << " Ty=" << tVecs[i][1] << " Tz=" << tVecs[i][2] << std::endl;
 
             mtx.unlock();
+            if ((char) cv::waitKey(10) == 27) break;
         }
     }
 }

@@ -19,7 +19,7 @@ public:
     explicit Estimation(const char* detectorParamsPath, const char* cameraParamPath, float markerLen);
 
     void lock(const callback_t& callback);
-    [[noreturn]] uint8_t start();
+    void start();
 private:
     Camera camera;
 
