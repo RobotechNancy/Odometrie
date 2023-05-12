@@ -16,7 +16,7 @@
  * @param markerLen Longueur d'un marqueur (en m)
  * @param markerSep Longueur de séparation entre deux marqueurs (en m)
  */
-void boardToPng(const std::string &path, uint8_t markersX, uint8_t markersY, uint8_t markerLen, uint8_t markerSep);
+void boardToPng(const std::string &path, int markersX, int markersY, int markerLen, int markerSep);
 
 
 /*!
@@ -28,6 +28,6 @@ void boardToPng(const std::string &path, uint8_t markersX, uint8_t markersY, uin
  * @param markerSep Longueur de séparation entre deux marqueurs (en m)
  * @return
  */
-uint8_t calibrate(Camera camera, uint8_t markersX, uint8_t markersY, uint8_t markerLen, uint8_t markerSep);
+uint8_t calibrate(Camera camera, uint8_t markersX, uint8_t markersY, float markerLen, float markerSep);
 
 #endif //OPENCV_CALIBRATION_H

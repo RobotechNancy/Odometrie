@@ -8,8 +8,6 @@
 #include "camera.h"
 
 
-typedef std::function<void(const std::vector<int>&, const std::vector<cv::Vec3d>&, const std::vector<cv::Vec3d>&)> callback_t;
-
 /*!
  * @brief Classe pour l'estimation de la position des marqueurs
  * @details Estimation(markerLen)
@@ -18,8 +16,8 @@ class Estimation {
 public:
     explicit Estimation(const char* detectorParamsPath, const char* cameraParamPath, float markerLen);
 
-    void lock(const callback_t& callback);
-    void start();
+    void sendTags();
+    [[noreturn]] void start();
 private:
     Camera camera;
 

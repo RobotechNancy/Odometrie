@@ -17,7 +17,7 @@ Estimation::Estimation(const char* detectorParamsPath, const char* cameraParamPa
 }
 
 
-void Estimation::start() {
+[[noreturn]] void Estimation::start() {
     cv::Mat imageCopy;
 
     while (true) {
@@ -28,7 +28,7 @@ void Estimation::start() {
             mtx.lock();
             cv::aruco::estimatePoseSingleMarkers(
                     corners, markerLen,
-                    cameraMatrix,distCoeffs,
+                    cameraMatrix, distCoeffs,
                     rVecs, tVecs
             );
 
@@ -47,14 +47,15 @@ void Estimation::start() {
                           << " Tx=" << tVecs[i][0] << " Ty=" << tVecs[i][1] << " Tz=" << tVecs[i][2] << std::endl;
 
             mtx.unlock();
-            if ((char) cv::waitKey(10) == 27) break;
         }
     }
 }
 
 
-void Estimation::lock(const callback_t& callback) {
+void Estimation::sendTags() {
     mtx.lock();
-    callback(ids, rVecs, tVecs);
+
+
+
     mtx.unlock();
 }
