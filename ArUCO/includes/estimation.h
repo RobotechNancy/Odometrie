@@ -18,9 +18,8 @@ public:
     explicit Estimation(const cv::FileStorage& configFile);
 
     void update();
-    void send(uint8_t dest);
+    void send(XBee& xbee, uint8_t dest);
 private:
-    XBee xbee;
     Camera camera;
 
     float markerLen;

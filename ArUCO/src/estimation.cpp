@@ -7,14 +7,6 @@
 
 
 Estimation::Estimation(const cv::FileStorage& configFile): camera(configFile) {
-    int status = xbee.openSerialConnection(
-            configFile["xbee_port"].string().c_str(),
-            (int) configFile["xbee_address"] + 3
-    );
-
-    if (status != XB_SER_E_SUCCESS)
-        exit(status);
-
     markerLen = (float) configFile["marker_length_m"];
     refMarkerId = (int) configFile["ref_marker_id"];
 
@@ -55,7 +47,7 @@ void Estimation::update() {
 }
 
 
-void Estimation::send(uint8_t dest) {
+void Estimation::send(XBee& xbee, uint8_t dest) {
     mtx.lock();
 
     uint16_t temp;
