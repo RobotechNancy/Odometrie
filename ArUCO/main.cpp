@@ -27,7 +27,7 @@ int main(int argc, char** argv) {
 
     int status = xbee.openSerialConnection(
             fs["xbee_port"].string().c_str(),
-            (int) fs["xbee_address"] + 3
+            (int) fs["xbee_address"]
     );
 
     if (status != XB_SER_E_SUCCESS)
