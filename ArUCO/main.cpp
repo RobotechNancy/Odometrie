@@ -7,7 +7,7 @@
 
 
 int main(int argc, char** argv) {
-    cv::FileStorage fs("../data/lib_params.yml", cv::FileStorage::READ);
+    cv::FileStorage fs("../data/config.yml", cv::FileStorage::READ);
 
     if (argc > 1 && strcmp(argv[1], "calibrate") == 0) {
         return calibrate(fs);
