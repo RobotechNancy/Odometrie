@@ -6,6 +6,7 @@
 #define OPENCV_ESTIMATION_H
 
 #include "camera.h"
+#include "robotech/xbee.h"
 
 
 /*!
@@ -14,14 +15,17 @@
  */
 class Estimation {
 public:
-    explicit Estimation(const char* detectorParamsPath, const char* cameraParamPath, float markerLen);
+    explicit Estimation(const cv::FileStorage& configFile);
 
-    void sendTags();
-    [[noreturn]] void start();
+    void update();
+    void send(uint8_t dest);
 private:
+    XBee xbee;
     Camera camera;
 
     float markerLen;
+    int refMarkerId;
+
     cv::Vec3d origin;
     cv::Mat image, cameraMatrix, distCoeffs;
 

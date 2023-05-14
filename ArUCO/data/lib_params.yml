@@ -1,16 +1,17 @@
 %YAML:1.0
 ---
-# PC: /dev/ttyUSB0
-# RPi: /dev/ttyS0
-xbee_port: /dev/ttyUSB0
 
-# ROBOT_1: 1 / ROBOT_2: 2
-#CAMERA_1: 3 / CAMERA_2: 4
-xbee_address: 1
+detector_params_path: ../data/detector_params.yml  # Paramètres de détection
+camera_params_path: ../data/camera_params.yml      # Paramètres de la caméra
 
-markers_x: 4
-markers_y: 4
-marker_length_m: 0.07
-marker_length_px: 100
-markers_spacing_m: 0.1
-markers_spacing_px: 20
+xbee_port: /dev/ttyUSB0   # /dev/ttyS0 (RPi) ou /dev/ttyUSB0 (PC)
+xbee_address: 1           # 1 (Robot 1), 2 (Robot 2), 3 (Camera 1), 4 (Camera 2) ou 5 (Camera 3)
+
+markers_x: 4              # Nombre de marqueurs en largeur
+markers_y: 4              # Nombre de marqueurs en hauteur
+marker_length_px: 100     # Longueur d'un marqueur en pixels
+markers_spacing_px: 20    # Espacement entre deux marqueurs en pixels
+marker_length_m: 0.07     # Longueur d'un marqueur en mètres
+markers_spacing_m: 0.1    # Espacement entre deux marqueurs en mètres
+ref_marker_id: 0          # ID du marqueur de référence
+dictionary: 1             # Dictionnaire de marqueurs (ici 100 marqueurs 4x4)

@@ -11,7 +11,7 @@ int main(int argc, char** argv) {
     cv::FileStorage fs("../data/lib_params.yml", cv::FileStorage::READ);
 
     if (argc > 1 && strcmp(argv[1], "calibrate") == 0) {
-        Camera camera("../data/detector_params.yml");
+        Camera camera(fs);
 
         return calibrate(
                 camera,
@@ -32,25 +32,10 @@ int main(int argc, char** argv) {
         ), 0;
     }
 
-    if (argc > 1 && strcmp(argv[1], "estimate") == 0) {
-        XBee xbee(
-                (std::string) fs["xbee_port"],
-                (int) fs["xbee_address"] + 3
-        );
-
-        int status = xbee.openSerialConnection();
-        if (status != XB_SER_E_SUCCESS)
-            return status;
-
-        Estimation estimation(
-                "../data/detector_params.yml",
-                "../data/camera_params.yml",
-                (float) fs["marker_length_m"]
-        );
-
-        estimation.start();
+    if (argc < 2 || strcmp(argv[1], "estimate") != 0) {
+        std::cout << "Usage: " << argv[0] << " [calibrate|estimate|board]" << std::endl;
+        return -1;
     }
 
-    std::cout << "Usage: " << argv[0] << " [calibrate|estimate|board]" << std::endl;
-    return 0;
+    Estimation estimation(fs);
 }

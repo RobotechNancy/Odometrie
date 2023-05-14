@@ -5,7 +5,7 @@
 #include "camera.h"
 
 
-Camera::Camera(const char* detectorParamPath) {
+Camera::Camera(const cv::FileStorage& configFile) {
     cap = cv::VideoCapture(0);
 
     if (!cap.isOpened()) {
@@ -13,7 +13,10 @@ Camera::Camera(const char* detectorParamPath) {
         exit(-1);
     }
 
-    cv::FileStorage fs(detectorParamPath, cv::FileStorage::READ);
+    cv::FileStorage fs(
+            configFile["detector_params_path"],
+            cv::FileStorage::READ
+    );
 
     if (!fs.isOpened()) {
         std::cerr << "Impossible d'ouvrir \"detector_params.yml\"" << std::endl;
@@ -24,6 +27,8 @@ Camera::Camera(const char* detectorParamPath) {
     detectorParams.readDetectorParameters(fs.root());
     fs.release();
 
+    detector.setDictionary(
+            cv::aruco::getPredefinedDictionary((int) configFile["dictionary"])
+    );
     detector.setDetectorParameters(detectorParams);
-    detector.setDictionary(getPredefinedDictionary(DICTIONNARY));
 }

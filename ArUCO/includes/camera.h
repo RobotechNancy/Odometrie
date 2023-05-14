@@ -8,13 +8,10 @@
 #include <opencv2/aruco.hpp>
 #include <opencv2/opencv.hpp>
 
-#define REF_ARUCO_ID 47
-#define DICTIONNARY cv::aruco::DICT_4X4_50
-
 
 class Camera {
 public:
-    explicit Camera(const char* detectorParamPath);
+    explicit Camera(const cv::FileStorage& configFile);
 
     cv::VideoCapture cap;
     cv::aruco::ArucoDetector detector;
