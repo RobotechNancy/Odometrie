@@ -2,6 +2,7 @@
 // Created by mrspaar on 4/25/23.
 //
 
+#include <opencv2/aruco.hpp>
 #include "estimation.h"
 
 

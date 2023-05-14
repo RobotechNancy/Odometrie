@@ -1,6 +1,7 @@
 %YAML:1.0
 ---
 
+board_save_path: ../data/board.yml                 # Emplacement de sauvegarde de la grille de calibration
 detector_params_path: ../data/detector_params.yml  # Paramètres de détection
 camera_params_path: ../data/camera_params.yml      # Paramètres de la caméra
 

@@ -2,10 +2,21 @@
 // Created by mrspaar on 4/25/23.
 //
 
+#include <iostream>
+
+#include "camera.h"
 #include "calibration.h"
+#include "opencv2/aruco.hpp"
+#include <opencv2/highgui.hpp>
 
 
-void boardToPng(const std::string &path, int markersX, int markersY, int markerLen, int markerSep) {
+void boardToPng(const cv::FileStorage& configFile) {
+    int markersX = (int) configFile["markers_x"];
+    int markersY = (int) configFile["markers_y"];
+    int markerLen = (int) configFile["marker_length_px"];
+    int markerSep = (int) configFile["markers_spacing_px"];
+    std::string boardSavePath = (std::string) configFile["board_save_path"];
+
     int margins = markerSep;
     int borderBits = 1;
 
@@ -19,15 +30,17 @@ void boardToPng(const std::string &path, int markersX, int markersY, int markerL
     cv::Mat boardImage;
     b.generateImage(imageSize, boardImage, margins, borderBits);
 
-    imshow("board", boardImage);
+    cv::imshow("board", boardImage);
     cv::waitKey(0);
 
-    imwrite(path, boardImage);
-    std::cout << "Grille sauvegardée dans \"" << path << "\"" << std::endl;
+    imwrite(boardSavePath, boardImage);
+    std::cout << "Grille sauvegardée dans \"" << boardSavePath << "\"" << std::endl;
 }
 
 
-uint8_t calibrate(Camera camera, uint8_t markersX, uint8_t markersY, float markerLen, float markerSep) {
+uint8_t calibrate(const cv::FileStorage& configFile) {
+    Camera camera(configFile);
+
     cv::Size imgSize;
     cv::Mat img, imgCopy;
 
@@ -90,9 +103,12 @@ uint8_t calibrate(Camera camera, uint8_t markersX, uint8_t markersY, float marke
     }
 
     cv::aruco::GridBoard gridBoard(
-            cv::Size(markersX, markersY),
-            float(markerLen),
-            float(markerSep),
+            cv::Size(
+                    (int) configFile["markers_x"],
+                    (int) configFile["markers_y"]
+            ),
+            (float) configFile["marker_length_m"],
+            (float) configFile["markers_spacing_m"],
             camera.detector.getDictionary()
     );
 
