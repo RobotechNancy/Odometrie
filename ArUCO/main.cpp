@@ -22,10 +22,14 @@ int main(int argc, char** argv) {
         return -1;
     }
 
-    XBee xbee;
+    //XBee xbee;
     Estimation estimation(fs);
 
-    int status = xbee.openSerialConnection(
+    while (true) {
+        estimation.update();
+    }
+
+    /*int status = xbee.openSerialConnection(
             fs["xbee_port"].string().c_str(),
             (int) fs["xbee_address"]
     );
@@ -36,5 +40,5 @@ int main(int argc, char** argv) {
     xbee.subscribe(XB_FCT_GET_ARUCO_POS, [&estimation, &xbee](const frame_t& frame) {
         estimation.update();
         estimation.send(xbee, frame.adr_emetteur);
-    });
+    });*/
 }
