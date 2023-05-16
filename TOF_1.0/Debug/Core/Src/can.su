@@ -1,0 +1,4 @@
+../Core/Src/can.c:14:6:configure_CAN	48	static
+../Core/Src/can.c:36:6:HAL_CAN_RxFifo0MsgPendingCallback	112	static
+../Core/Src/can.c:54:5:format_frame	24	static
+../Core/Src/can.c:80:5:send	56	static
