@@ -10,7 +10,7 @@ find_package(PkgConfig)
 pkg_check_modules(XBee REQUIRED XBee)
 
 add_executable(ArUCO
-        main.cpp includes/tags.h
+        main.cpp
         includes/camera.h src/camera.cpp
         includes/calibration.h src/calibration.cpp
         includes/estimation.h src/estimation.cpp

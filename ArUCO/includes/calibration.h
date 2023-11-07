@@ -8,18 +8,10 @@
 #include <opencv2/core/persistence.hpp>
 
 
-/*!
- * @brief Créer un fichier PNG contenant un plateau de marqueurs
- * @param configFile Fichier de configuration
- */
+// Créer un fichier PNG contenant un plateau de marqueurs
 void boardToPng(const cv::FileStorage& configFile);
 
-
-/*!
- * @brief Calibrer une caméra (déterminer sa matrice et ses coefficients de distortion)
- * @param fs Fichier de configuration
- * @return
- */
+// Calibrer une caméra (déterminer sa matrice et ses coefficients de distortion)
 uint8_t calibrate(const cv::FileStorage& configFile);
 
 
