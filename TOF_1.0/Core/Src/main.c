@@ -73,24 +73,6 @@ static void MX_CAN1_Init(void);
 int main(void)
 {
   /* USER CODE BEGIN 1 */
-	TOF_Units_t montof[9];
-	montof[0] = TOF_UNIT_0;
-	montof[1] = TOF_UNIT_1;
-	montof[2] = TOF_UNIT_2;
-	montof[3] = TOF_UNIT_3;
-	montof[4] = TOF_UNIT_4;
-	montof[5] = TOF_UNIT_5;
-//	TOF_Units_t montof_0 = TOF_UNIT_0;
-//	TOF_Units_t montof_1 = TOF_UNIT_1;
-//	TOF_Units_t montof_2 = TOF_UNIT_2;
-//	TOF_Units_t montof_3 = TOF_UNIT_3;
-//	TOF_Units_t montof_4 = TOF_UNIT_4;
-//	TOF_Units_t montof_5 = TOF_UNIT_5;
-	uint16_t tentatives_max = 100;
-	uint16_t range_milimeters;
-	uint8_t range_status;
-	uint8_t buf[40];
-//	unit16_t Mat[6][3];
   /* USER CODE END 1 */
 
   /* MCU Configuration--------------------------------------------------------*/
@@ -116,111 +98,16 @@ int main(void)
   MX_CAN1_Init();
   /* USER CODE BEGIN 2 */
   configure_CAN(hcan1, CAN_ADDR_ODOMETRIE_TOF);
-  HAL_GPIO_WritePin(GPIOB, GPIO_PIN_1, 1);
-  TOF_Status_t result_init = TOF_Init();
-  if(result_init != TOF_STATUS_SUCESS){
-	  sprintf((char*)buf, "Erreur lors de l'initialisation : %i\r\n", ((int8_t)result_init));
-
-	  HAL_UART_Transmit(&huart2, buf, strlen((char*)buf), HAL_MAX_DELAY);
-  }
-  HAL_GPIO_WritePin(GPIOB, GPIO_PIN_1, 0);
-
 
   /* USER CODE END 2 */
 
   /* Infinite loop */
   /* USER CODE BEGIN WHILE */
-  char *data = {0x00};
+  char *data = {0x05};
+
   while (1)
   {
-	HAL_Delay(100);
-	for(int i = 0; i < TOF_UNIT_COUNT; i++){
-		TOF_Get_Range(montof[i], tentatives_max, &range_milimeters, &range_status);
-		if(((uint16_t)range_milimeters)-40 <= 100 && (uint8_t)range_status == 1){
-			data[0] |= 1UL << i;
-		}
-		HAL_Delay(100);
-	}
-	if(data[0] != 0x00){
-		send(CAN_ADDR_ODOMETRIE_TOF, FCT_TOF_WCOLLISION, data, 1, false, 0, 0);
-		data[0] = 0x00;
-	}
-
-//	for(int i = 0; i < TOF_UNIT_COUNT; i++){
-//		Mat[i][0] = "TOF n°%u",i;
-//	}
-//	for(int i = 0; i < TOF_UNIT_COUNT; i++){
-//		Mat[i][1] = (uint8_t)range_status;
-//	}
-//	for(int i = 0; i < TOF_UNIT_COUNT; i++){
-//		Mat[i][2] = (uint16_t)&range_milimeters;
-//	}
-//
-//		sprintf((char*)buf, "TOF n°%u | Value : %u mm | Status : %u\r\n", i, ((uint16_t)range_milimeters), ((uint8_t)range_status));
-//		HAL_UART_Transmit(&huart2, buf, strlen((char*)buf), HAL_MAX_DELAY);
-
-//	TOF_Get_Range(montof_0, tentatives_max, &range_milimeters, &range_status);
-//	sprintf((char*)buf, "TOF n°0 | Value : %u mm | Status : %u\r\n", ((uint16_t)range_milimeters), ((uint8_t)range_status));
-//
-//	HAL_UART_Transmit(&huart2, buf, strlen((char*)buf), HAL_MAX_DELAY);
-//	HAL_Delay(100);
-//
-//
-//	TOF_Get_Range(montof_1, tentatives_max, &range_milimeters, &range_status);
-//	sprintf((char*)buf, "TOF n°1 | Value : %u mm | Status : %u\r\n", ((uint16_t)range_milimeters), ((uint8_t)range_status));
-//
-//	HAL_UART_Transmit(&huart2, buf, strlen((char*)buf), HAL_MAX_DELAY);
-//
-//	HAL_Delay(100);
-//
-//	TOF_Get_Range(montof_2, tentatives_max, &range_milimeters, &range_status);
-//	sprintf((char*)buf, "TOF n°2 | Value : %u mm | Status : %u\r\n", ((uint16_t)range_milimeters), ((uint8_t)range_status));
-//
-//	HAL_UART_Transmit(&huart2, buf, strlen((char*)buf), HAL_MAX_DELAY);
-//
-//	HAL_Delay(100);
-//
-//	TOF_Get_Range(montof_3, tentatives_max, &range_milimeters, &range_status);
-//	sprintf((char*)buf, "TOF n°3 | Value : %u mm | Status : %u\r\n", ((uint16_t)range_milimeters), ((uint8_t)range_status));
-//
-//	HAL_UART_Transmit(&huart2, buf, strlen((char*)buf), HAL_MAX_DELAY);
-//
-//	HAL_Delay(100);
-//
-//	TOF_Get_Range(montof_4, tentatives_max, &range_milimeters, &range_status);
-//	sprintf((char*)buf, "TOF n°4 | Value : %u mm | Status : %u\r\n", ((uint16_t)range_milimeters), ((uint8_t)range_status));
-//
-//	HAL_UART_Transmit(&huart2, buf, strlen((char*)buf), HAL_MAX_DELAY);
-//
-//	HAL_Delay(100);
-//
-//	TOF_Get_Range(montof_5, tentatives_max, &range_milimeters, &range_status);
-//	sprintf((char*)buf, "TOF n°5 | Value : %u mm | Status : %u\r\n", ((uint16_t)range_milimeters), ((uint8_t)range_status));
-//
-//	HAL_UART_Transmit(&huart2, buf, strlen((char*)buf), HAL_MAX_DELAY);
-//
-//	HAL_Delay(100);
-//
-//	TOF_Get_Range(montof_6, tentatives_max, &range_milimeters, &range_status);
-//	sprintf((char*)buf, "TOF n°6 | Value : %u mm | Status : %u\r\n", ((uint16_t)range_milimeters), ((uint8_t)range_status));
-//
-//	HAL_UART_Transmit(&huart2, buf, strlen((char*)buf), HAL_MAX_DELAY);
-//
-//	HAL_Delay(100);
-//
-//	TOF_Get_Range(montof_7, tentatives_max, &range_milimeters, &range_status);
-//	sprintf((char*)buf, "TOF n°7 | Value : %u mm | Status : %u\r\n", ((uint16_t)range_milimeters), ((uint8_t)range_status));
-//
-//	HAL_UART_Transmit(&huart2, buf, strlen((char*)buf), HAL_MAX_DELAY);
-//
-//	HAL_Delay(100);
-//
-//	TOF_Get_Range(montof_8, tentatives_max, &range_milimeters, &range_status);
-//	sprintf((char*)buf, "TOF n°8 | Value : %u mm | Status : %u\r\n", ((uint16_t)range_milimeters), ((uint8_t)range_status));
-//
-//	HAL_UART_Transmit(&huart2, buf, strlen((char*)buf), HAL_MAX_DELAY);
-//
-//	HAL_Delay(100);
+	send()
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */
