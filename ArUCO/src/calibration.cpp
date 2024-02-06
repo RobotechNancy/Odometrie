@@ -6,8 +6,9 @@
 
 #include "camera.h"
 #include "calibration.h"
-#include "opencv2/aruco.hpp"
+#include <opencv2/aruco.hpp>
 #include <opencv2/highgui.hpp>
+#include <opencv2/objdetect/aruco_board.hpp>
 
 
 void boardToPng(const cv::FileStorage& configFile) {
@@ -112,7 +113,7 @@ uint8_t calibrate(const cv::FileStorage& configFile) {
     }
 
     // On recrée la grille à partir des paramètres et du dictionnaire choisi
-    cv::aruco::GridBoard gridBoard(
+    cv::Ptr<cv::aruco::GridBoard> gridBoard = new cv::aruco::GridBoard(
             cv::Size(
                     (int) configFile["markers_x"],
                     (int) configFile["markers_y"]
@@ -124,7 +125,7 @@ uint8_t calibrate(const cv::FileStorage& configFile) {
 
     // On calcule les paramètres de caméra à partir des captures et de la grille recréée
     repError = calibrateCameraAruco(allCornersConcatenated, allIdsConcatenated,
-                                    markerCounterPerFrame, &gridBoard, imgSize, cameraMatrix,
+                                    markerCounterPerFrame, gridBoard, imgSize, cameraMatrix,
                                     distCoeffs, calib_rvecs, calib_tvecs, 0);
 
     // On enregistre les paramètres de caméra dans un fichier YAML
