@@ -17,10 +17,13 @@ public:
 private:
     Camera camera;
 
-    float markerLen;                                         // ⎡ Définis depuis
-    int refMarkerId;                                         // ⎣ config.yml
 
-    cv::Vec3d origin;                                        // Coordonnées du marqueur de référence
+    float markerLen;
+    int refMarkerId;
+    cv::Vec3d refMarkerPos;
+
+    cv::Vec3d origint, originr;
+
     cv::Mat image, cameraMatrix, distCoeffs;
 
     std::mutex mtx;                                          // Évite les accès simultanés à tVecs et rVecs
@@ -31,3 +34,4 @@ private:
 
 
 #endif //OPENCV_ESTIMATION_H
+
