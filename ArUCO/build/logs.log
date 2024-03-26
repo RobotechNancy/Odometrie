@@ -1,0 +1,844 @@
+[INFO][12:10:25][xbee] Connexion ouverte avec succès sur le port /dev/ttyS0
+[INFO][12:10:25][xbee] Entrée en mode AT en cours...
+[INFO][12:10:28][xbee] Réponse du XBee : OK
+[INFO][12:10:28][xbee] Entrée dans le mode AT
+[INFO][12:10:28][xbee] Envoi de la commande AT : ATBD
+[INFO][12:10:28][xbee] Réponse du XBee : 3
+[INFO][12:10:28][xbee] Vaudrate vérifié avec succès
+[INFO][12:10:28][xbee] Envoi de la commande AT : ATNB
+[INFO][12:10:28][xbee] Réponse du XBee : 0
+[INFO][12:10:28][xbee] Nombre de bits de parité vérifié avec succès
+[INFO][12:10:28][xbee] Envoi de la commande AT : ATAP
+[INFO][12:10:29][xbee] Réponse du XBee : 0
+[INFO][12:10:29][xbee] Mode API vérifié avec succès
+[INFO][12:10:29][xbee] Envoi de la commande AT : ATEE
+[INFO][12:10:29][xbee] Réponse du XBee : 1
+[INFO][12:10:29][xbee] Chiffrement AES vérifié avec succès
+[INFO][12:10:29][xbee] Envoi de la commande AT : ATKY=32303032
+[INFO][12:10:29][xbee] Réponse du XBee : OK
+[INFO][12:10:29][xbee] Clé de chiffrement configurée avec succès
+[INFO][12:10:29][xbee] Envoi de la commande AT : ATCH
+[INFO][12:10:29][xbee] Réponse du XBee : C
+[INFO][12:10:29][xbee] Canal de découverte réseau vérifié avec succès
+[INFO][12:10:29][xbee] Envoi de la commande AT : ATID
+[INFO][12:10:29][xbee] Réponse du XBee : 3332
+[INFO][12:10:29][xbee] ID du réseau vérifié avec succès
+[INFO][12:10:29][xbee] Envoi de la commande AT : ATCE
+[INFO][12:10:29][xbee] Réponse du XBee : 0
+[INFO][12:10:29][xbee] Mode coordinateur vérifié avec succès
+[INFO][12:10:29][xbee] Envoi de la commande AT : ATMY
+[INFO][12:10:29][xbee] Réponse du XBee : 3
+[INFO][12:10:29][xbee] Adresse source 16bits vérifiée avec succès
+[INFO][12:10:29][xbee] Envoi de la commande AT : ATDL
+[INFO][12:10:29][xbee] Réponse du XBee : FFFF
+[INFO][12:10:29][xbee] Adresse de destination vérifiée avec succès
+[INFO][12:10:29][xbee] Envoi de la commande AT : ATDH
+[INFO][12:10:29][xbee] Réponse du XBee : 0
+[INFO][12:10:29][xbee] Adresse de destination vérifiée avec succès
+[INFO][12:10:29][xbee] Ecriture des paramètres AT dans la mémoire
+[INFO][12:10:29][xbee] Réponse du XBee : OK
+[INFO][12:10:29][xbee] Configuration AT enregistrée dans la mémoire du module
+[INFO][12:10:29][xbee] Sortie du mode AT
+[INFO][12:10:30][xbee] Réponse du XBee : OK
+[INFO][12:10:30][xbee] Configuration AT réalisée avec succès
+[INFO][12:10:30][xbee] Thread d'écoute démarré
+[INFO][12:10:31][xbee] Données reçues : 0x1 0xa 0xf5 0x3 0x1 0x8 0 0xf4 0 0x4 
+[INFO][12:10:32][xbee] Trame envoyée avec succès : 0x1 0xb 0xf4 0x1 0x3 0x9 0 0xf5 0x17 0x17 0x4 
+[INFO][12:10:40][xbee] Buffer Rx nettoyé avec succès
+[INFO][12:10:40][xbee] Connexion série fermée avec succès
+[INFO][12:11:37][xbee] Connexion ouverte avec succès sur le port /dev/ttyS0
+[INFO][12:11:37][xbee] Entrée en mode AT en cours...
+[INFO][12:11:40][xbee] Réponse du XBee : OK
+[INFO][12:11:40][xbee] Entrée dans le mode AT
+[INFO][12:11:40][xbee] Envoi de la commande AT : ATBD
+[INFO][12:11:40][xbee] Réponse du XBee : 3
+[INFO][12:11:40][xbee] Vaudrate vérifié avec succès
+[INFO][12:11:40][xbee] Envoi de la commande AT : ATNB
+[INFO][12:11:41][xbee] Réponse du XBee : 0
+[INFO][12:11:41][xbee] Nombre de bits de parité vérifié avec succès
+[INFO][12:11:41][xbee] Envoi de la commande AT : ATAP
+[INFO][12:11:41][xbee] Réponse du XBee : 0
+[INFO][12:11:41][xbee] Mode API vérifié avec succès
+[INFO][12:11:41][xbee] Envoi de la commande AT : ATEE
+[INFO][12:11:41][xbee] Réponse du XBee : 1
+[INFO][12:11:41][xbee] Chiffrement AES vérifié avec succès
+[INFO][12:11:41][xbee] Envoi de la commande AT : ATKY=32303032
+[INFO][12:11:41][xbee] Réponse du XBee : OK
+[INFO][12:11:41][xbee] Clé de chiffrement configurée avec succès
+[INFO][12:11:41][xbee] Envoi de la commande AT : ATCH
+[INFO][12:11:41][xbee] Réponse du XBee : C
+[INFO][12:11:41][xbee] Canal de découverte réseau vérifié avec succès
+[INFO][12:11:41][xbee] Envoi de la commande AT : ATID
+[INFO][12:11:41][xbee] Réponse du XBee : 3332
+[INFO][12:11:41][xbee] ID du réseau vérifié avec succès
+[INFO][12:11:41][xbee] Envoi de la commande AT : ATCE
+[INFO][12:11:41][xbee] Réponse du XBee : 0
+[INFO][12:11:41][xbee] Mode coordinateur vérifié avec succès
+[INFO][12:11:41][xbee] Envoi de la commande AT : ATMY
+[INFO][12:11:41][xbee] Réponse du XBee : 3
+[INFO][12:11:41][xbee] Adresse source 16bits vérifiée avec succès
+[INFO][12:11:41][xbee] Envoi de la commande AT : ATDL
+[INFO][12:11:41][xbee] Réponse du XBee : FFFF
+[INFO][12:11:41][xbee] Adresse de destination vérifiée avec succès
+[INFO][12:11:41][xbee] Envoi de la commande AT : ATDH
+[INFO][12:11:42][xbee] Réponse du XBee : 0
+[INFO][12:11:42][xbee] Adresse de destination vérifiée avec succès
+[INFO][12:11:42][xbee] Ecriture des paramètres AT dans la mémoire
+[INFO][12:11:42][xbee] Réponse du XBee : OK
+[INFO][12:11:42][xbee] Configuration AT enregistrée dans la mémoire du module
+[INFO][12:11:42][xbee] Sortie du mode AT
+[INFO][12:11:42][xbee] Réponse du XBee : OK
+[INFO][12:11:42][xbee] Configuration AT réalisée avec succès
+[INFO][12:11:42][xbee] Thread d'écoute démarré
+[INFO][12:11:52][xbee] Buffer Rx nettoyé avec succès
+[INFO][12:11:52][xbee] Connexion série fermée avec succès
+[INFO][12:12:01][xbee] Connexion ouverte avec succès sur le port /dev/ttyS0
+[INFO][12:12:01][xbee] Entrée en mode AT en cours...
+[INFO][12:12:04][xbee] Réponse du XBee : OK
+[INFO][12:12:04][xbee] Entrée dans le mode AT
+[INFO][12:12:04][xbee] Envoi de la commande AT : ATBD
+[INFO][12:12:04][xbee] Réponse du XBee : 3
+[INFO][12:12:04][xbee] Vaudrate vérifié avec succès
+[INFO][12:12:04][xbee] Envoi de la commande AT : ATNB
+[INFO][12:12:04][xbee] Réponse du XBee : 0
+[INFO][12:12:04][xbee] Nombre de bits de parité vérifié avec succès
+[INFO][12:12:04][xbee] Envoi de la commande AT : ATAP
+[INFO][12:12:04][xbee] Réponse du XBee : 0
+[INFO][12:12:04][xbee] Mode API vérifié avec succès
+[INFO][12:12:04][xbee] Envoi de la commande AT : ATEE
+[INFO][12:12:04][xbee] Réponse du XBee : 1
+[INFO][12:12:04][xbee] Chiffrement AES vérifié avec succès
+[INFO][12:12:04][xbee] Envoi de la commande AT : ATKY=32303032
+[INFO][12:12:04][xbee] Réponse du XBee : OK
+[INFO][12:12:04][xbee] Clé de chiffrement configurée avec succès
+[INFO][12:12:04][xbee] Envoi de la commande AT : ATCH
+[INFO][12:12:04][xbee] Réponse du XBee : C
+[INFO][12:12:04][xbee] Canal de découverte réseau vérifié avec succès
+[INFO][12:12:04][xbee] Envoi de la commande AT : ATID
+[INFO][12:12:04][xbee] Réponse du XBee : 3332
+[INFO][12:12:04][xbee] ID du réseau vérifié avec succès
+[INFO][12:12:04][xbee] Envoi de la commande AT : ATCE
+[INFO][12:12:05][xbee] Réponse du XBee : 0
+[INFO][12:12:05][xbee] Mode coordinateur vérifié avec succès
+[INFO][12:12:05][xbee] Envoi de la commande AT : ATMY
+[INFO][12:12:05][xbee] Réponse du XBee : 3
+[INFO][12:12:05][xbee] Adresse source 16bits vérifiée avec succès
+[INFO][12:12:05][xbee] Envoi de la commande AT : ATDL
+[INFO][12:12:05][xbee] Réponse du XBee : FFFF
+[INFO][12:12:05][xbee] Adresse de destination vérifiée avec succès
+[INFO][12:12:05][xbee] Envoi de la commande AT : ATDH
+[INFO][12:12:05][xbee] Réponse du XBee : 0
+[INFO][12:12:05][xbee] Adresse de destination vérifiée avec succès
+[INFO][12:12:05][xbee] Ecriture des paramètres AT dans la mémoire
+[INFO][12:12:05][xbee] Réponse du XBee : OK
+[INFO][12:12:05][xbee] Configuration AT enregistrée dans la mémoire du module
+[INFO][12:12:05][xbee] Sortie du mode AT
+[INFO][12:12:05][xbee] Réponse du XBee : OK
+[INFO][12:12:05][xbee] Configuration AT réalisée avec succès
+[INFO][12:12:05][xbee] Thread d'écoute démarré
+[INFO][12:12:15][xbee] Buffer Rx nettoyé avec succès
+[INFO][12:12:15][xbee] Connexion série fermée avec succès
+[INFO][12:12:17][xbee] Connexion ouverte avec succès sur le port /dev/ttyS0
+[INFO][12:12:17][xbee] Entrée en mode AT en cours...
+[INFO][12:12:20][xbee] Réponse du XBee : OK
+[INFO][12:12:20][xbee] Entrée dans le mode AT
+[INFO][12:12:20][xbee] Envoi de la commande AT : ATBD
+[INFO][12:12:20][xbee] Réponse du XBee : 3
+[INFO][12:12:20][xbee] Vaudrate vérifié avec succès
+[INFO][12:12:20][xbee] Envoi de la commande AT : ATNB
+[INFO][12:12:20][xbee] Réponse du XBee : 0
+[INFO][12:12:20][xbee] Nombre de bits de parité vérifié avec succès
+[INFO][12:12:20][xbee] Envoi de la commande AT : ATAP
+[INFO][12:12:20][xbee] Réponse du XBee : 0
+[INFO][12:12:20][xbee] Mode API vérifié avec succès
+[INFO][12:12:20][xbee] Envoi de la commande AT : ATEE
+[INFO][12:12:20][xbee] Réponse du XBee : 1
+[INFO][12:12:20][xbee] Chiffrement AES vérifié avec succès
+[INFO][12:12:20][xbee] Envoi de la commande AT : ATKY=32303032
+[INFO][12:12:20][xbee] Réponse du XBee : OK
+[INFO][12:12:20][xbee] Clé de chiffrement configurée avec succès
+[INFO][12:12:20][xbee] Envoi de la commande AT : ATCH
+[INFO][12:12:20][xbee] Réponse du XBee : C
+[INFO][12:12:20][xbee] Canal de découverte réseau vérifié avec succès
+[INFO][12:12:20][xbee] Envoi de la commande AT : ATID
+[INFO][12:12:20][xbee] Réponse du XBee : 3332
+[INFO][12:12:20][xbee] ID du réseau vérifié avec succès
+[INFO][12:12:20][xbee] Envoi de la commande AT : ATCE
+[INFO][12:12:20][xbee] Réponse du XBee : 0
+[INFO][12:12:20][xbee] Mode coordinateur vérifié avec succès
+[INFO][12:12:20][xbee] Envoi de la commande AT : ATMY
+[INFO][12:12:21][xbee] Réponse du XBee : 3
+[INFO][12:12:21][xbee] Adresse source 16bits vérifiée avec succès
+[INFO][12:12:21][xbee] Envoi de la commande AT : ATDL
+[INFO][12:12:21][xbee] Réponse du XBee : FFFF
+[INFO][12:12:21][xbee] Adresse de destination vérifiée avec succès
+[INFO][12:12:21][xbee] Envoi de la commande AT : ATDH
+[INFO][12:12:21][xbee] Réponse du XBee : 0
+[INFO][12:12:21][xbee] Adresse de destination vérifiée avec succès
+[INFO][12:12:21][xbee] Ecriture des paramètres AT dans la mémoire
+[INFO][12:12:21][xbee] Réponse du XBee : OK
+[INFO][12:12:21][xbee] Configuration AT enregistrée dans la mémoire du module
+[INFO][12:12:21][xbee] Sortie du mode AT
+[INFO][12:12:21][xbee] Réponse du XBee : OK
+[INFO][12:12:21][xbee] Configuration AT réalisée avec succès
+[INFO][12:12:21][xbee] Thread d'écoute démarré
+[INFO][12:12:31][xbee] Buffer Rx nettoyé avec succès
+[INFO][12:12:31][xbee] Connexion série fermée avec succès
+[INFO][12:12:41][xbee] Connexion ouverte avec succès sur le port /dev/ttyS0
+[INFO][12:12:41][xbee] Entrée en mode AT en cours...
+[INFO][12:12:44][xbee] Réponse du XBee : OK
+[INFO][12:12:44][xbee] Entrée dans le mode AT
+[INFO][12:12:44][xbee] Envoi de la commande AT : ATBD
+[INFO][12:12:44][xbee] Réponse du XBee : 3
+[INFO][12:12:44][xbee] Vaudrate vérifié avec succès
+[INFO][12:12:44][xbee] Envoi de la commande AT : ATNB
+[INFO][12:12:44][xbee] Réponse du XBee : 0
+[INFO][12:12:44][xbee] Nombre de bits de parité vérifié avec succès
+[INFO][12:12:44][xbee] Envoi de la commande AT : ATAP
+[INFO][12:12:45][xbee] Réponse du XBee : 0
+[INFO][12:12:45][xbee] Mode API vérifié avec succès
+[INFO][12:12:45][xbee] Envoi de la commande AT : ATEE
+[INFO][12:12:45][xbee] Réponse du XBee : 1
+[INFO][12:12:45][xbee] Chiffrement AES vérifié avec succès
+[INFO][12:12:45][xbee] Envoi de la commande AT : ATKY=32303032
+[INFO][12:12:45][xbee] Réponse du XBee : OK
+[INFO][12:12:45][xbee] Clé de chiffrement configurée avec succès
+[INFO][12:12:45][xbee] Envoi de la commande AT : ATCH
+[INFO][12:12:45][xbee] Réponse du XBee : C
+[INFO][12:12:45][xbee] Canal de découverte réseau vérifié avec succès
+[INFO][12:12:45][xbee] Envoi de la commande AT : ATID
+[INFO][12:12:45][xbee] Réponse du XBee : 3332
+[INFO][12:12:45][xbee] ID du réseau vérifié avec succès
+[INFO][12:12:45][xbee] Envoi de la commande AT : ATCE
+[INFO][12:12:45][xbee] Réponse du XBee : 0
+[INFO][12:12:45][xbee] Mode coordinateur vérifié avec succès
+[INFO][12:12:45][xbee] Envoi de la commande AT : ATMY
+[INFO][12:12:45][xbee] Réponse du XBee : 3
+[INFO][12:12:45][xbee] Adresse source 16bits vérifiée avec succès
+[INFO][12:12:45][xbee] Envoi de la commande AT : ATDL
+[INFO][12:12:45][xbee] Réponse du XBee : FFFF
+[INFO][12:12:45][xbee] Adresse de destination vérifiée avec succès
+[INFO][12:12:45][xbee] Envoi de la commande AT : ATDH
+[INFO][12:12:45][xbee] Réponse du XBee : 0
+[INFO][12:12:45][xbee] Adresse de destination vérifiée avec succès
+[INFO][12:12:45][xbee] Ecriture des paramètres AT dans la mémoire
+[INFO][12:12:45][xbee] Réponse du XBee : OK
+[INFO][12:12:45][xbee] Configuration AT enregistrée dans la mémoire du module
+[INFO][12:12:45][xbee] Sortie du mode AT
+[INFO][12:12:46][xbee] Réponse du XBee : OK
+[INFO][12:12:46][xbee] Configuration AT réalisée avec succès
+[INFO][12:12:46][xbee] Thread d'écoute démarré
+[INFO][12:12:56][xbee] Buffer Rx nettoyé avec succès
+[INFO][12:12:56][xbee] Connexion série fermée avec succès
+[INFO][12:13:00][xbee] Connexion ouverte avec succès sur le port /dev/ttyS0
+[INFO][12:13:00][xbee] Entrée en mode AT en cours...
+[INFO][12:13:03][xbee] Réponse du XBee : OK
+[INFO][12:13:03][xbee] Entrée dans le mode AT
+[INFO][12:13:03][xbee] Envoi de la commande AT : ATBD
+[INFO][12:13:03][xbee] Réponse du XBee : 3
+[INFO][12:13:03][xbee] Vaudrate vérifié avec succès
+[INFO][12:13:03][xbee] Envoi de la commande AT : ATNB
+[INFO][12:13:03][xbee] Réponse du XBee : 0
+[INFO][12:13:03][xbee] Nombre de bits de parité vérifié avec succès
+[INFO][12:13:03][xbee] Envoi de la commande AT : ATAP
+[INFO][12:13:03][xbee] Réponse du XBee : 0
+[INFO][12:13:03][xbee] Mode API vérifié avec succès
+[INFO][12:13:03][xbee] Envoi de la commande AT : ATEE
+[INFO][12:13:03][xbee] Réponse du XBee : 1
+[INFO][12:13:03][xbee] Chiffrement AES vérifié avec succès
+[INFO][12:13:03][xbee] Envoi de la commande AT : ATKY=32303032
+[INFO][12:13:03][xbee] Réponse du XBee : OK
+[INFO][12:13:03][xbee] Clé de chiffrement configurée avec succès
+[INFO][12:13:03][xbee] Envoi de la commande AT : ATCH
+[INFO][12:13:03][xbee] Réponse du XBee : C
+[INFO][12:13:03][xbee] Canal de découverte réseau vérifié avec succès
+[INFO][12:13:03][xbee] Envoi de la commande AT : ATID
+[INFO][12:13:03][xbee] Réponse du XBee : 3332
+[INFO][12:13:03][xbee] ID du réseau vérifié avec succès
+[INFO][12:13:03][xbee] Envoi de la commande AT : ATCE
+[INFO][12:13:03][xbee] Réponse du XBee : 0
+[INFO][12:13:03][xbee] Mode coordinateur vérifié avec succès
+[INFO][12:13:03][xbee] Envoi de la commande AT : ATMY
+[INFO][12:13:03][xbee] Réponse du XBee : 3
+[INFO][12:13:03][xbee] Adresse source 16bits vérifiée avec succès
+[INFO][12:13:03][xbee] Envoi de la commande AT : ATDL
+[INFO][12:13:04][xbee] Réponse du XBee : FFFF
+[INFO][12:13:04][xbee] Adresse de destination vérifiée avec succès
+[INFO][12:13:04][xbee] Envoi de la commande AT : ATDH
+[INFO][12:13:04][xbee] Réponse du XBee : 0
+[INFO][12:13:04][xbee] Adresse de destination vérifiée avec succès
+[INFO][12:13:04][xbee] Ecriture des paramètres AT dans la mémoire
+[INFO][12:13:04][xbee] Réponse du XBee : OK
+[INFO][12:13:04][xbee] Configuration AT enregistrée dans la mémoire du module
+[INFO][12:13:04][xbee] Sortie du mode AT
+[INFO][12:13:04][xbee] Réponse du XBee : OK
+[INFO][12:13:04][xbee] Configuration AT réalisée avec succès
+[INFO][12:13:04][xbee] Thread d'écoute démarré
+[INFO][12:13:14][xbee] Buffer Rx nettoyé avec succès
+[INFO][12:13:14][xbee] Connexion série fermée avec succès
+[INFO][12:13:16][xbee] Connexion ouverte avec succès sur le port /dev/ttyS0
+[INFO][12:13:16][xbee] Entrée en mode AT en cours...
+[INFO][12:13:19][xbee] Réponse du XBee : OK
+[INFO][12:13:19][xbee] Entrée dans le mode AT
+[INFO][12:13:19][xbee] Envoi de la commande AT : ATBD
+[INFO][12:13:19][xbee] Réponse du XBee : 3
+[INFO][12:13:19][xbee] Vaudrate vérifié avec succès
+[INFO][12:13:19][xbee] Envoi de la commande AT : ATNB
+[INFO][12:13:19][xbee] Réponse du XBee : 0
+[INFO][12:13:19][xbee] Nombre de bits de parité vérifié avec succès
+[INFO][12:13:19][xbee] Envoi de la commande AT : ATAP
+[INFO][12:13:19][xbee] Réponse du XBee : 0
+[INFO][12:13:19][xbee] Mode API vérifié avec succès
+[INFO][12:13:19][xbee] Envoi de la commande AT : ATEE
+[INFO][12:13:19][xbee] Réponse du XBee : 1
+[INFO][12:13:19][xbee] Chiffrement AES vérifié avec succès
+[INFO][12:13:19][xbee] Envoi de la commande AT : ATKY=32303032
+[INFO][12:13:19][xbee] Réponse du XBee : OK
+[INFO][12:13:19][xbee] Clé de chiffrement configurée avec succès
+[INFO][12:13:19][xbee] Envoi de la commande AT : ATCH
+[INFO][12:13:19][xbee] Réponse du XBee : C
+[INFO][12:13:19][xbee] Canal de découverte réseau vérifié avec succès
+[INFO][12:13:19][xbee] Envoi de la commande AT : ATID
+[INFO][12:13:19][xbee] Réponse du XBee : 3332
+[INFO][12:13:19][xbee] ID du réseau vérifié avec succès
+[INFO][12:13:19][xbee] Envoi de la commande AT : ATCE
+[INFO][12:13:19][xbee] Réponse du XBee : 0
+[INFO][12:13:19][xbee] Mode coordinateur vérifié avec succès
+[INFO][12:13:19][xbee] Envoi de la commande AT : ATMY
+[INFO][12:13:20][xbee] Réponse du XBee : 3
+[INFO][12:13:20][xbee] Adresse source 16bits vérifiée avec succès
+[INFO][12:13:20][xbee] Envoi de la commande AT : ATDL
+[INFO][12:13:20][xbee] Réponse du XBee : FFFF
+[INFO][12:13:20][xbee] Adresse de destination vérifiée avec succès
+[INFO][12:13:20][xbee] Envoi de la commande AT : ATDH
+[INFO][12:13:20][xbee] Réponse du XBee : 0
+[INFO][12:13:20][xbee] Adresse de destination vérifiée avec succès
+[INFO][12:13:20][xbee] Ecriture des paramètres AT dans la mémoire
+[INFO][12:13:20][xbee] Réponse du XBee : OK
+[INFO][12:13:20][xbee] Configuration AT enregistrée dans la mémoire du module
+[INFO][12:13:20][xbee] Sortie du mode AT
+[INFO][12:13:20][xbee] Réponse du XBee : OK
+[INFO][12:13:20][xbee] Configuration AT réalisée avec succès
+[INFO][12:13:20][xbee] Thread d'écoute démarré
+[INFO][12:13:23][xbee] Données reçues : 0x1 0xa 0xf5 0x3 0x1 0x8 0 0xf4 0 0x4 
+[INFO][12:13:24][xbee] Trame envoyée avec succès : 0x1 0xb 0xf4 0x1 0x3 0x9 0 0xf5 0x17 0x17 0x4 
+[INFO][12:13:30][xbee] Buffer Rx nettoyé avec succès
+[INFO][12:13:30][xbee] Connexion série fermée avec succès
+[INFO][12:13:38][xbee] Connexion ouverte avec succès sur le port /dev/ttyS0
+[INFO][12:13:38][xbee] Entrée en mode AT en cours...
+[INFO][12:13:41][xbee] Réponse du XBee : OK
+[INFO][12:13:41][xbee] Entrée dans le mode AT
+[INFO][12:13:41][xbee] Envoi de la commande AT : ATBD
+[INFO][12:13:41][xbee] Réponse du XBee : 3
+[INFO][12:13:41][xbee] Vaudrate vérifié avec succès
+[INFO][12:13:41][xbee] Envoi de la commande AT : ATNB
+[INFO][12:13:42][xbee] Réponse du XBee : 0
+[INFO][12:13:42][xbee] Nombre de bits de parité vérifié avec succès
+[INFO][12:13:42][xbee] Envoi de la commande AT : ATAP
+[INFO][12:13:42][xbee] Réponse du XBee : 0
+[INFO][12:13:42][xbee] Mode API vérifié avec succès
+[INFO][12:13:42][xbee] Envoi de la commande AT : ATEE
+[INFO][12:13:42][xbee] Réponse du XBee : 1
+[INFO][12:13:42][xbee] Chiffrement AES vérifié avec succès
+[INFO][12:13:42][xbee] Envoi de la commande AT : ATKY=32303032
+[INFO][12:13:42][xbee] Réponse du XBee : OK
+[INFO][12:13:42][xbee] Clé de chiffrement configurée avec succès
+[INFO][12:13:42][xbee] Envoi de la commande AT : ATCH
+[INFO][12:13:42][xbee] Réponse du XBee : C
+[INFO][12:13:42][xbee] Canal de découverte réseau vérifié avec succès
+[INFO][12:13:42][xbee] Envoi de la commande AT : ATID
+[INFO][12:13:42][xbee] Réponse du XBee : 3332
+[INFO][12:13:42][xbee] ID du réseau vérifié avec succès
+[INFO][12:13:42][xbee] Envoi de la commande AT : ATCE
+[INFO][12:13:42][xbee] Réponse du XBee : 0
+[INFO][12:13:42][xbee] Mode coordinateur vérifié avec succès
+[INFO][12:13:42][xbee] Envoi de la commande AT : ATMY
+[INFO][12:13:42][xbee] Réponse du XBee : 3
+[INFO][12:13:42][xbee] Adresse source 16bits vérifiée avec succès
+[INFO][12:13:42][xbee] Envoi de la commande AT : ATDL
+[INFO][12:13:42][xbee] Réponse du XBee : FFFF
+[INFO][12:13:42][xbee] Adresse de destination vérifiée avec succès
+[INFO][12:13:42][xbee] Envoi de la commande AT : ATDH
+[INFO][12:13:43][xbee] Réponse du XBee : 0
+[INFO][12:13:43][xbee] Adresse de destination vérifiée avec succès
+[INFO][12:13:43][xbee] Ecriture des paramètres AT dans la mémoire
+[INFO][12:13:43][xbee] Réponse du XBee : OK
+[INFO][12:13:43][xbee] Configuration AT enregistrée dans la mémoire du module
+[INFO][12:13:43][xbee] Sortie du mode AT
+[INFO][12:13:43][xbee] Réponse du XBee : OK
+[INFO][12:13:43][xbee] Configuration AT réalisée avec succès
+[INFO][12:13:43][xbee] Thread d'écoute démarré
+[INFO][12:13:53][xbee] Buffer Rx nettoyé avec succès
+[INFO][12:13:53][xbee] Connexion série fermée avec succès
+[INFO][12:13:57][xbee] Connexion ouverte avec succès sur le port /dev/ttyS0
+[INFO][12:13:57][xbee] Entrée en mode AT en cours...
+[INFO][12:14:00][xbee] Réponse du XBee : OK
+[INFO][12:14:00][xbee] Entrée dans le mode AT
+[INFO][12:14:00][xbee] Envoi de la commande AT : ATBD
+[INFO][12:14:00][xbee] Réponse du XBee : 3
+[INFO][12:14:00][xbee] Vaudrate vérifié avec succès
+[INFO][12:14:00][xbee] Envoi de la commande AT : ATNB
+[INFO][12:14:00][xbee] Réponse du XBee : 0
+[INFO][12:14:00][xbee] Nombre de bits de parité vérifié avec succès
+[INFO][12:14:00][xbee] Envoi de la commande AT : ATAP
+[INFO][12:14:00][xbee] Réponse du XBee : 0
+[INFO][12:14:00][xbee] Mode API vérifié avec succès
+[INFO][12:14:00][xbee] Envoi de la commande AT : ATEE
+[INFO][12:14:00][xbee] Réponse du XBee : 1
+[INFO][12:14:00][xbee] Chiffrement AES vérifié avec succès
+[INFO][12:14:00][xbee] Envoi de la commande AT : ATKY=32303032
+[INFO][12:14:01][xbee] Réponse du XBee : OK
+[INFO][12:14:01][xbee] Clé de chiffrement configurée avec succès
+[INFO][12:14:01][xbee] Envoi de la commande AT : ATCH
+[INFO][12:14:01][xbee] Réponse du XBee : C
+[INFO][12:14:01][xbee] Canal de découverte réseau vérifié avec succès
+[INFO][12:14:01][xbee] Envoi de la commande AT : ATID
+[INFO][12:14:01][xbee] Réponse du XBee : 3332
+[INFO][12:14:01][xbee] ID du réseau vérifié avec succès
+[INFO][12:14:01][xbee] Envoi de la commande AT : ATCE
+[INFO][12:14:01][xbee] Réponse du XBee : 0
+[INFO][12:14:01][xbee] Mode coordinateur vérifié avec succès
+[INFO][12:14:01][xbee] Envoi de la commande AT : ATMY
+[INFO][12:14:01][xbee] Réponse du XBee : 3
+[INFO][12:14:01][xbee] Adresse source 16bits vérifiée avec succès
+[INFO][12:14:01][xbee] Envoi de la commande AT : ATDL
+[INFO][12:14:01][xbee] Réponse du XBee : FFFF
+[INFO][12:14:01][xbee] Adresse de destination vérifiée avec succès
+[INFO][12:14:01][xbee] Envoi de la commande AT : ATDH
+[INFO][12:14:01][xbee] Réponse du XBee : 0
+[INFO][12:14:01][xbee] Adresse de destination vérifiée avec succès
+[INFO][12:14:01][xbee] Ecriture des paramètres AT dans la mémoire
+[INFO][12:14:01][xbee] Réponse du XBee : OK
+[INFO][12:14:01][xbee] Configuration AT enregistrée dans la mémoire du module
+[INFO][12:14:01][xbee] Sortie du mode AT
+[INFO][12:14:01][xbee] Réponse du XBee : OK
+[INFO][12:14:01][xbee] Configuration AT réalisée avec succès
+[INFO][12:14:01][xbee] Thread d'écoute démarré
+[INFO][12:14:11][xbee] Buffer Rx nettoyé avec succès
+[INFO][12:14:11][xbee] Connexion série fermée avec succès
+[INFO][12:14:15][xbee] Connexion ouverte avec succès sur le port /dev/ttyS0
+[INFO][12:14:15][xbee] Entrée en mode AT en cours...
+[INFO][12:14:18][xbee] Réponse du XBee : OK
+[INFO][12:14:18][xbee] Entrée dans le mode AT
+[INFO][12:14:18][xbee] Envoi de la commande AT : ATBD
+[INFO][12:14:18][xbee] Réponse du XBee : 3
+[INFO][12:14:18][xbee] Vaudrate vérifié avec succès
+[INFO][12:14:18][xbee] Envoi de la commande AT : ATNB
+[INFO][12:14:18][xbee] Réponse du XBee : 0
+[INFO][12:14:18][xbee] Nombre de bits de parité vérifié avec succès
+[INFO][12:14:18][xbee] Envoi de la commande AT : ATAP
+[INFO][12:14:18][xbee] Réponse du XBee : 0
+[INFO][12:14:18][xbee] Mode API vérifié avec succès
+[INFO][12:14:18][xbee] Envoi de la commande AT : ATEE
+[INFO][12:14:18][xbee] Réponse du XBee : 1
+[INFO][12:14:18][xbee] Chiffrement AES vérifié avec succès
+[INFO][12:14:18][xbee] Envoi de la commande AT : ATKY=32303032
+[INFO][12:14:18][xbee] Réponse du XBee : OK
+[INFO][12:14:18][xbee] Clé de chiffrement configurée avec succès
+[INFO][12:14:18][xbee] Envoi de la commande AT : ATCH
+[INFO][12:14:18][xbee] Réponse du XBee : C
+[INFO][12:14:18][xbee] Canal de découverte réseau vérifié avec succès
+[INFO][12:14:18][xbee] Envoi de la commande AT : ATID
+[INFO][12:14:18][xbee] Réponse du XBee : 3332
+[INFO][12:14:18][xbee] ID du réseau vérifié avec succès
+[INFO][12:14:18][xbee] Envoi de la commande AT : ATCE
+[INFO][12:14:19][xbee] Réponse du XBee : 0
+[INFO][12:14:19][xbee] Mode coordinateur vérifié avec succès
+[INFO][12:14:19][xbee] Envoi de la commande AT : ATMY
+[INFO][12:14:19][xbee] Réponse du XBee : 3
+[INFO][12:14:19][xbee] Adresse source 16bits vérifiée avec succès
+[INFO][12:14:19][xbee] Envoi de la commande AT : ATDL
+[INFO][12:14:19][xbee] Réponse du XBee : FFFF
+[INFO][12:14:19][xbee] Adresse de destination vérifiée avec succès
+[INFO][12:14:19][xbee] Envoi de la commande AT : ATDH
+[INFO][12:14:19][xbee] Réponse du XBee : 0
+[INFO][12:14:19][xbee] Adresse de destination vérifiée avec succès
+[INFO][12:14:19][xbee] Ecriture des paramètres AT dans la mémoire
+[INFO][12:14:19][xbee] Réponse du XBee : OK
+[INFO][12:14:19][xbee] Configuration AT enregistrée dans la mémoire du module
+[INFO][12:14:19][xbee] Sortie du mode AT
+[INFO][12:14:19][xbee] Réponse du XBee : OK
+[INFO][12:14:19][xbee] Configuration AT réalisée avec succès
+[INFO][12:14:19][xbee] Thread d'écoute démarré
+[INFO][12:14:21][xbee] Données reçues : 0x1 0xa 0xf5 0x3 0x1 0x8 0 0xf4 0 0x4 
+[INFO][12:14:22][xbee] Trame envoyée avec succès : 0x1 0x1d 0xe2 0x1 0x3 0x9 0 0xf5 0x17 0x35 0xff 0xff 0 0 0x3 0xbd 0x1 0x35 0x3c 0xff 0xff 0 0 0x3 0xf0 0 0 0x67 0x4 
+[INFO][12:14:29][xbee] Buffer Rx nettoyé avec succès
+[INFO][12:14:29][xbee] Connexion série fermée avec succès
+[INFO][12:15:54][xbee] Connexion ouverte avec succès sur le port /dev/ttyS0
+[INFO][12:15:54][xbee] Entrée en mode AT en cours...
+[INFO][12:15:57][xbee] Réponse du XBee : OK
+[INFO][12:15:57][xbee] Entrée dans le mode AT
+[INFO][12:15:57][xbee] Envoi de la commande AT : ATBD
+[INFO][12:15:57][xbee] Réponse du XBee : 3
+[INFO][12:15:57][xbee] Vaudrate vérifié avec succès
+[INFO][12:15:57][xbee] Envoi de la commande AT : ATNB
+[INFO][12:15:57][xbee] Réponse du XBee : 0
+[INFO][12:15:57][xbee] Nombre de bits de parité vérifié avec succès
+[INFO][12:15:57][xbee] Envoi de la commande AT : ATAP
+[INFO][12:15:57][xbee] Réponse du XBee : 0
+[INFO][12:15:57][xbee] Mode API vérifié avec succès
+[INFO][12:15:57][xbee] Envoi de la commande AT : ATEE
+[INFO][12:15:57][xbee] Réponse du XBee : 1
+[INFO][12:15:57][xbee] Chiffrement AES vérifié avec succès
+[INFO][12:15:57][xbee] Envoi de la commande AT : ATKY=32303032
+[INFO][12:15:57][xbee] Réponse du XBee : OK
+[INFO][12:15:57][xbee] Clé de chiffrement configurée avec succès
+[INFO][12:15:57][xbee] Envoi de la commande AT : ATCH
+[INFO][12:15:58][xbee] Réponse du XBee : C
+[INFO][12:15:58][xbee] Canal de découverte réseau vérifié avec succès
+[INFO][12:15:58][xbee] Envoi de la commande AT : ATID
+[INFO][12:15:58][xbee] Réponse du XBee : 3332
+[INFO][12:15:58][xbee] ID du réseau vérifié avec succès
+[INFO][12:15:58][xbee] Envoi de la commande AT : ATCE
+[INFO][12:15:58][xbee] Réponse du XBee : 0
+[INFO][12:15:58][xbee] Mode coordinateur vérifié avec succès
+[INFO][12:15:58][xbee] Envoi de la commande AT : ATMY
+[INFO][12:15:58][xbee] Réponse du XBee : 3
+[INFO][12:15:58][xbee] Adresse source 16bits vérifiée avec succès
+[INFO][12:15:58][xbee] Envoi de la commande AT : ATDL
+[INFO][12:15:58][xbee] Réponse du XBee : FFFF
+[INFO][12:15:58][xbee] Adresse de destination vérifiée avec succès
+[INFO][12:15:58][xbee] Envoi de la commande AT : ATDH
+[INFO][12:15:58][xbee] Réponse du XBee : 0
+[INFO][12:15:58][xbee] Adresse de destination vérifiée avec succès
+[INFO][12:15:58][xbee] Ecriture des paramètres AT dans la mémoire
+[INFO][12:15:58][xbee] Réponse du XBee : OK
+[INFO][12:15:58][xbee] Configuration AT enregistrée dans la mémoire du module
+[INFO][12:15:58][xbee] Sortie du mode AT
+[INFO][12:15:58][xbee] Réponse du XBee : OK
+[INFO][12:15:58][xbee] Configuration AT réalisée avec succès
+[INFO][12:15:58][xbee] Thread d'écoute démarré
+[INFO][12:16:01][xbee] Données reçues : 0x1 0xa 0xf5 0x3 0x1 0x8 0 0xf4 0 0x4 
+[INFO][12:16:01][xbee] Trame envoyée avec succès : 0x1 0xb 0xf4 0x1 0x3 0x9 0 0xf5 0x17 0x17 0x4 
+[INFO][12:16:08][xbee] Buffer Rx nettoyé avec succès
+[INFO][12:16:08][xbee] Connexion série fermée avec succès
+[INFO][12:16:15][xbee] Connexion ouverte avec succès sur le port /dev/ttyS0
+[INFO][12:16:15][xbee] Entrée en mode AT en cours...
+[INFO][12:16:18][xbee] Réponse du XBee : OK
+[INFO][12:16:18][xbee] Entrée dans le mode AT
+[INFO][12:16:18][xbee] Envoi de la commande AT : ATBD
+[INFO][12:16:18][xbee] Réponse du XBee : 3
+[INFO][12:16:18][xbee] Vaudrate vérifié avec succès
+[INFO][12:16:18][xbee] Envoi de la commande AT : ATNB
+[INFO][12:16:18][xbee] Réponse du XBee : 0
+[INFO][12:16:18][xbee] Nombre de bits de parité vérifié avec succès
+[INFO][12:16:18][xbee] Envoi de la commande AT : ATAP
+[INFO][12:16:18][xbee] Réponse du XBee : 0
+[INFO][12:16:18][xbee] Mode API vérifié avec succès
+[INFO][12:16:18][xbee] Envoi de la commande AT : ATEE
+[INFO][12:16:18][xbee] Réponse du XBee : 1
+[INFO][12:16:18][xbee] Chiffrement AES vérifié avec succès
+[INFO][12:16:18][xbee] Envoi de la commande AT : ATKY=32303032
+[INFO][12:16:18][xbee] Réponse du XBee : OK
+[INFO][12:16:18][xbee] Clé de chiffrement configurée avec succès
+[INFO][12:16:18][xbee] Envoi de la commande AT : ATCH
+[INFO][12:16:18][xbee] Réponse du XBee : C
+[INFO][12:16:18][xbee] Canal de découverte réseau vérifié avec succès
+[INFO][12:16:18][xbee] Envoi de la commande AT : ATID
+[INFO][12:16:19][xbee] Réponse du XBee : 3332
+[INFO][12:16:19][xbee] ID du réseau vérifié avec succès
+[INFO][12:16:19][xbee] Envoi de la commande AT : ATCE
+[INFO][12:16:19][xbee] Réponse du XBee : 0
+[INFO][12:16:19][xbee] Mode coordinateur vérifié avec succès
+[INFO][12:16:19][xbee] Envoi de la commande AT : ATMY
+[INFO][12:16:19][xbee] Réponse du XBee : 3
+[INFO][12:16:19][xbee] Adresse source 16bits vérifiée avec succès
+[INFO][12:16:19][xbee] Envoi de la commande AT : ATDL
+[INFO][12:16:19][xbee] Réponse du XBee : FFFF
+[INFO][12:16:19][xbee] Adresse de destination vérifiée avec succès
+[INFO][12:16:19][xbee] Envoi de la commande AT : ATDH
+[INFO][12:16:19][xbee] Réponse du XBee : 0
+[INFO][12:16:19][xbee] Adresse de destination vérifiée avec succès
+[INFO][12:16:19][xbee] Ecriture des paramètres AT dans la mémoire
+[INFO][12:16:19][xbee] Réponse du XBee : OK
+[INFO][12:16:19][xbee] Configuration AT enregistrée dans la mémoire du module
+[INFO][12:16:19][xbee] Sortie du mode AT
+[INFO][12:16:19][xbee] Réponse du XBee : OK
+[INFO][12:16:19][xbee] Configuration AT réalisée avec succès
+[INFO][12:16:19][xbee] Thread d'écoute démarré
+[INFO][12:16:29][xbee] Buffer Rx nettoyé avec succès
+[INFO][12:16:29][xbee] Connexion série fermée avec succès
+[INFO][12:16:36][xbee] Connexion ouverte avec succès sur le port /dev/ttyS0
+[INFO][12:16:36][xbee] Entrée en mode AT en cours...
+[INFO][12:16:39][xbee] Réponse du XBee : OK
+[INFO][12:16:39][xbee] Entrée dans le mode AT
+[INFO][12:16:39][xbee] Envoi de la commande AT : ATBD
+[INFO][12:16:39][xbee] Réponse du XBee : 3
+[INFO][12:16:39][xbee] Vaudrate vérifié avec succès
+[INFO][12:16:39][xbee] Envoi de la commande AT : ATNB
+[INFO][12:16:40][xbee] Réponse du XBee : 0
+[INFO][12:16:40][xbee] Nombre de bits de parité vérifié avec succès
+[INFO][12:16:40][xbee] Envoi de la commande AT : ATAP
+[INFO][12:16:40][xbee] Réponse du XBee : 0
+[INFO][12:16:40][xbee] Mode API vérifié avec succès
+[INFO][12:16:40][xbee] Envoi de la commande AT : ATEE
+[INFO][12:16:40][xbee] Réponse du XBee : 1
+[INFO][12:16:40][xbee] Chiffrement AES vérifié avec succès
+[INFO][12:16:40][xbee] Envoi de la commande AT : ATKY=32303032
+[INFO][12:16:40][xbee] Réponse du XBee : OK
+[INFO][12:16:40][xbee] Clé de chiffrement configurée avec succès
+[INFO][12:16:40][xbee] Envoi de la commande AT : ATCH
+[INFO][12:16:40][xbee] Réponse du XBee : C
+[INFO][12:16:40][xbee] Canal de découverte réseau vérifié avec succès
+[INFO][12:16:40][xbee] Envoi de la commande AT : ATID
+[INFO][12:16:40][xbee] Réponse du XBee : 3332
+[INFO][12:16:40][xbee] ID du réseau vérifié avec succès
+[INFO][12:16:40][xbee] Envoi de la commande AT : ATCE
+[INFO][12:16:40][xbee] Réponse du XBee : 0
+[INFO][12:16:40][xbee] Mode coordinateur vérifié avec succès
+[INFO][12:16:40][xbee] Envoi de la commande AT : ATMY
+[INFO][12:16:40][xbee] Réponse du XBee : 3
+[INFO][12:16:40][xbee] Adresse source 16bits vérifiée avec succès
+[INFO][12:16:40][xbee] Envoi de la commande AT : ATDL
+[INFO][12:16:40][xbee] Réponse du XBee : FFFF
+[INFO][12:16:40][xbee] Adresse de destination vérifiée avec succès
+[INFO][12:16:40][xbee] Envoi de la commande AT : ATDH
+[INFO][12:16:40][xbee] Réponse du XBee : 0
+[INFO][12:16:40][xbee] Adresse de destination vérifiée avec succès
+[INFO][12:16:40][xbee] Ecriture des paramètres AT dans la mémoire
+[INFO][12:16:41][xbee] Réponse du XBee : OK
+[INFO][12:16:41][xbee] Configuration AT enregistrée dans la mémoire du module
+[INFO][12:16:41][xbee] Sortie du mode AT
+[INFO][12:16:41][xbee] Réponse du XBee : OK
+[INFO][12:16:41][xbee] Configuration AT réalisée avec succès
+[INFO][12:16:41][xbee] Thread d'écoute démarré
+[INFO][12:16:51][xbee] Buffer Rx nettoyé avec succès
+[INFO][12:16:51][xbee] Connexion série fermée avec succès
+[INFO][12:17:12][xbee] Connexion ouverte avec succès sur le port /dev/ttyS0
+[INFO][12:17:12][xbee] Entrée en mode AT en cours...
+[INFO][12:17:15][xbee] Réponse du XBee : OK
+[INFO][12:17:15][xbee] Entrée dans le mode AT
+[INFO][12:17:15][xbee] Envoi de la commande AT : ATBD
+[INFO][12:17:16][xbee] Réponse du XBee : 3
+[INFO][12:17:16][xbee] Vaudrate vérifié avec succès
+[INFO][12:17:16][xbee] Envoi de la commande AT : ATNB
+[INFO][12:17:16][xbee] Réponse du XBee : 0
+[INFO][12:17:16][xbee] Nombre de bits de parité vérifié avec succès
+[INFO][12:17:16][xbee] Envoi de la commande AT : ATAP
+[INFO][12:17:16][xbee] Réponse du XBee : 0
+[INFO][12:17:16][xbee] Mode API vérifié avec succès
+[INFO][12:17:16][xbee] Envoi de la commande AT : ATEE
+[INFO][12:17:16][xbee] Réponse du XBee : 1
+[INFO][12:17:16][xbee] Chiffrement AES vérifié avec succès
+[INFO][12:17:16][xbee] Envoi de la commande AT : ATKY=32303032
+[INFO][12:17:16][xbee] Réponse du XBee : OK
+[INFO][12:17:16][xbee] Clé de chiffrement configurée avec succès
+[INFO][12:17:16][xbee] Envoi de la commande AT : ATCH
+[INFO][12:17:16][xbee] Réponse du XBee : C
+[INFO][12:17:16][xbee] Canal de découverte réseau vérifié avec succès
+[INFO][12:17:16][xbee] Envoi de la commande AT : ATID
+[INFO][12:17:16][xbee] Réponse du XBee : 3332
+[INFO][12:17:16][xbee] ID du réseau vérifié avec succès
+[INFO][12:17:16][xbee] Envoi de la commande AT : ATCE
+[INFO][12:17:16][xbee] Réponse du XBee : 0
+[INFO][12:17:16][xbee] Mode coordinateur vérifié avec succès
+[INFO][12:17:16][xbee] Envoi de la commande AT : ATMY
+[INFO][12:17:16][xbee] Réponse du XBee : 3
+[INFO][12:17:16][xbee] Adresse source 16bits vérifiée avec succès
+[INFO][12:17:16][xbee] Envoi de la commande AT : ATDL
+[INFO][12:17:16][xbee] Réponse du XBee : FFFF
+[INFO][12:17:16][xbee] Adresse de destination vérifiée avec succès
+[INFO][12:17:16][xbee] Envoi de la commande AT : ATDH
+[INFO][12:17:17][xbee] Réponse du XBee : 0
+[INFO][12:17:17][xbee] Adresse de destination vérifiée avec succès
+[INFO][12:17:17][xbee] Ecriture des paramètres AT dans la mémoire
+[INFO][12:17:17][xbee] Réponse du XBee : OK
+[INFO][12:17:17][xbee] Configuration AT enregistrée dans la mémoire du module
+[INFO][12:17:17][xbee] Sortie du mode AT
+[INFO][12:17:17][xbee] Réponse du XBee : OK
+[INFO][12:17:17][xbee] Configuration AT réalisée avec succès
+[INFO][12:17:17][xbee] Thread d'écoute démarré
+[INFO][12:17:19][xbee] Données reçues : 0x1 0xa 0xf5 0x3 0x1 0x8 0 0xf4 0 0x4 
+[INFO][12:17:19][xbee] Trame envoyée avec succès : 0x1 0x26 0xd9 0x1 0x3 0x9 0 0xf5 0x17 0x3c 0xff 0xff 0 0x2d 0 0x28 0 0x3a 0x35 0xff 0xff 0 0x4d 0 0 0x1 0x4a 0x17 0xff 0xff 0 0 0 0 0 0 0x30 0x4 
+[INFO][12:17:27][xbee] Buffer Rx nettoyé avec succès
+[INFO][12:17:27][xbee] Connexion série fermée avec succès
+[INFO][12:25:49][xbee] Connexion ouverte avec succès sur le port /dev/ttyS0
+[INFO][12:25:49][xbee] Entrée en mode AT en cours...
+[INFO][12:25:52][xbee] Réponse du XBee : OK
+[INFO][12:25:52][xbee] Entrée dans le mode AT
+[INFO][12:25:52][xbee] Envoi de la commande AT : ATBD
+[INFO][12:25:52][xbee] Réponse du XBee : 3
+[INFO][12:25:52][xbee] Vaudrate vérifié avec succès
+[INFO][12:25:52][xbee] Envoi de la commande AT : ATNB
+[INFO][12:25:52][xbee] Réponse du XBee : 0
+[INFO][12:25:52][xbee] Nombre de bits de parité vérifié avec succès
+[INFO][12:25:52][xbee] Envoi de la commande AT : ATAP
+[INFO][12:25:52][xbee] Réponse du XBee : 0
+[INFO][12:25:52][xbee] Mode API vérifié avec succès
+[INFO][12:25:52][xbee] Envoi de la commande AT : ATEE
+[INFO][12:25:52][xbee] Réponse du XBee : 1
+[INFO][12:25:52][xbee] Chiffrement AES vérifié avec succès
+[INFO][12:25:52][xbee] Envoi de la commande AT : ATKY=32303032
+[INFO][12:25:53][xbee] Réponse du XBee : OK
+[INFO][12:25:53][xbee] Clé de chiffrement configurée avec succès
+[INFO][12:25:53][xbee] Envoi de la commande AT : ATCH
+[INFO][12:25:53][xbee] Réponse du XBee : C
+[INFO][12:25:53][xbee] Canal de découverte réseau vérifié avec succès
+[INFO][12:25:53][xbee] Envoi de la commande AT : ATID
+[INFO][12:25:53][xbee] Réponse du XBee : 3332
+[INFO][12:25:53][xbee] ID du réseau vérifié avec succès
+[INFO][12:25:53][xbee] Envoi de la commande AT : ATCE
+[INFO][12:25:53][xbee] Réponse du XBee : 0
+[INFO][12:25:53][xbee] Mode coordinateur vérifié avec succès
+[INFO][12:25:53][xbee] Envoi de la commande AT : ATMY
+[INFO][12:25:53][xbee] Réponse du XBee : 3
+[INFO][12:25:53][xbee] Adresse source 16bits vérifiée avec succès
+[INFO][12:25:53][xbee] Envoi de la commande AT : ATDL
+[INFO][12:25:53][xbee] Réponse du XBee : FFFF
+[INFO][12:25:53][xbee] Adresse de destination vérifiée avec succès
+[INFO][12:25:53][xbee] Envoi de la commande AT : ATDH
+[INFO][12:25:53][xbee] Réponse du XBee : 0
+[INFO][12:25:53][xbee] Adresse de destination vérifiée avec succès
+[INFO][12:25:53][xbee] Ecriture des paramètres AT dans la mémoire
+[INFO][12:25:53][xbee] Réponse du XBee : OK
+[INFO][12:25:53][xbee] Configuration AT enregistrée dans la mémoire du module
+[INFO][12:25:53][xbee] Sortie du mode AT
+[INFO][12:25:53][xbee] Réponse du XBee : OK
+[INFO][12:25:53][xbee] Configuration AT réalisée avec succès
+[INFO][12:25:53][xbee] Thread d'écoute démarré
+[INFO][12:26:03][xbee] Buffer Rx nettoyé avec succès
+[INFO][12:26:03][xbee] Connexion série fermée avec succès
+[INFO][12:26:09][xbee] Connexion ouverte avec succès sur le port /dev/ttyS0
+[INFO][12:26:09][xbee] Entrée en mode AT en cours...
+[INFO][12:26:12][xbee] Réponse du XBee : OK
+[INFO][12:26:12][xbee] Entrée dans le mode AT
+[INFO][12:26:12][xbee] Envoi de la commande AT : ATBD
+[INFO][12:26:12][xbee] Réponse du XBee : 3
+[INFO][12:26:12][xbee] Vaudrate vérifié avec succès
+[INFO][12:26:12][xbee] Envoi de la commande AT : ATNB
+[INFO][12:26:12][xbee] Réponse du XBee : 0
+[INFO][12:26:12][xbee] Nombre de bits de parité vérifié avec succès
+[INFO][12:26:12][xbee] Envoi de la commande AT : ATAP
+[INFO][12:26:12][xbee] Réponse du XBee : 0
+[INFO][12:26:12][xbee] Mode API vérifié avec succès
+[INFO][12:26:12][xbee] Envoi de la commande AT : ATEE
+[INFO][12:26:13][xbee] Réponse du XBee : 1
+[INFO][12:26:13][xbee] Chiffrement AES vérifié avec succès
+[INFO][12:26:13][xbee] Envoi de la commande AT : ATKY=32303032
+[INFO][12:26:13][xbee] Réponse du XBee : OK
+[INFO][12:26:13][xbee] Clé de chiffrement configurée avec succès
+[INFO][12:26:13][xbee] Envoi de la commande AT : ATCH
+[INFO][12:26:13][xbee] Réponse du XBee : C
+[INFO][12:26:13][xbee] Canal de découverte réseau vérifié avec succès
+[INFO][12:26:13][xbee] Envoi de la commande AT : ATID
+[INFO][12:26:13][xbee] Réponse du XBee : 3332
+[INFO][12:26:13][xbee] ID du réseau vérifié avec succès
+[INFO][12:26:13][xbee] Envoi de la commande AT : ATCE
+[INFO][12:26:13][xbee] Réponse du XBee : 0
+[INFO][12:26:13][xbee] Mode coordinateur vérifié avec succès
+[INFO][12:26:13][xbee] Envoi de la commande AT : ATMY
+[INFO][12:26:13][xbee] Réponse du XBee : 3
+[INFO][12:26:13][xbee] Adresse source 16bits vérifiée avec succès
+[INFO][12:26:13][xbee] Envoi de la commande AT : ATDL
+[INFO][12:26:13][xbee] Réponse du XBee : FFFF
+[INFO][12:26:13][xbee] Adresse de destination vérifiée avec succès
+[INFO][12:26:13][xbee] Envoi de la commande AT : ATDH
+[INFO][12:26:13][xbee] Réponse du XBee : 0
+[INFO][12:26:13][xbee] Adresse de destination vérifiée avec succès
+[INFO][12:26:13][xbee] Ecriture des paramètres AT dans la mémoire
+[INFO][12:26:13][xbee] Réponse du XBee : OK
+[INFO][12:26:13][xbee] Configuration AT enregistrée dans la mémoire du module
+[INFO][12:26:13][xbee] Sortie du mode AT
+[INFO][12:26:14][xbee] Réponse du XBee : OK
+[INFO][12:26:14][xbee] Configuration AT réalisée avec succès
+[INFO][12:26:14][xbee] Thread d'écoute démarré
+[INFO][12:26:16][xbee] Données reçues : 0x1 0xa 0xf5 0x3 0x1 0x8 0 0xf4 0 0x4 
+[INFO][12:26:17][xbee] Trame envoyée avec succès : 0x1 0x1d 0xe2 0x1 0x3 0x9 0 0xf5 0x17 0x35 0xff 0xff 0 0x54 0 0 0 0x3e 0x17 0xff 0xff 0 0 0 0 0 0 0x5f 0x4 
+[INFO][12:26:24][xbee] Buffer Rx nettoyé avec succès
+[INFO][12:26:24][xbee] Connexion série fermée avec succès
+[INFO][12:31:16][xbee] Connexion ouverte avec succès sur le port /dev/ttyS0
+[INFO][12:31:16][xbee] Entrée en mode AT en cours...
+[INFO][12:31:19][xbee] Réponse du XBee : OK
+[INFO][12:31:19][xbee] Entrée dans le mode AT
+[INFO][12:31:19][xbee] Envoi de la commande AT : ATBD
+[INFO][12:31:19][xbee] Réponse du XBee : 3
+[INFO][12:31:19][xbee] Vaudrate vérifié avec succès
+[INFO][12:31:19][xbee] Envoi de la commande AT : ATNB
+[INFO][12:31:19][xbee] Réponse du XBee : 0
+[INFO][12:31:19][xbee] Nombre de bits de parité vérifié avec succès
+[INFO][12:31:19][xbee] Envoi de la commande AT : ATAP
+[INFO][12:31:20][xbee] Réponse du XBee : 0
+[INFO][12:31:20][xbee] Mode API vérifié avec succès
+[INFO][12:31:20][xbee] Envoi de la commande AT : ATEE
+[INFO][12:31:20][xbee] Réponse du XBee : 1
+[INFO][12:31:20][xbee] Chiffrement AES vérifié avec succès
+[INFO][12:31:20][xbee] Envoi de la commande AT : ATKY=32303032
+[INFO][12:31:20][xbee] Réponse du XBee : OK
+[INFO][12:31:20][xbee] Clé de chiffrement configurée avec succès
+[INFO][12:31:20][xbee] Envoi de la commande AT : ATCH
+[INFO][12:31:20][xbee] Réponse du XBee : C
+[INFO][12:31:20][xbee] Canal de découverte réseau vérifié avec succès
+[INFO][12:31:20][xbee] Envoi de la commande AT : ATID
+[INFO][12:31:20][xbee] Réponse du XBee : 3332
+[INFO][12:31:20][xbee] ID du réseau vérifié avec succès
+[INFO][12:31:20][xbee] Envoi de la commande AT : ATCE
+[INFO][12:31:20][xbee] Réponse du XBee : 0
+[INFO][12:31:20][xbee] Mode coordinateur vérifié avec succès
+[INFO][12:31:20][xbee] Envoi de la commande AT : ATMY
+[INFO][12:31:20][xbee] Réponse du XBee : 3
+[INFO][12:31:20][xbee] Adresse source 16bits vérifiée avec succès
+[INFO][12:31:20][xbee] Envoi de la commande AT : ATDL
+[INFO][12:31:20][xbee] Réponse du XBee : FFFF
+[INFO][12:31:20][xbee] Adresse de destination vérifiée avec succès
+[INFO][12:31:20][xbee] Envoi de la commande AT : ATDH
+[INFO][12:31:20][xbee] Réponse du XBee : 0
+[INFO][12:31:20][xbee] Adresse de destination vérifiée avec succès
+[INFO][12:31:20][xbee] Ecriture des paramètres AT dans la mémoire
+[INFO][12:31:20][xbee] Réponse du XBee : OK
+[INFO][12:31:20][xbee] Configuration AT enregistrée dans la mémoire du module
+[INFO][12:31:20][xbee] Sortie du mode AT
+[INFO][12:31:21][xbee] Réponse du XBee : OK
+[INFO][12:31:21][xbee] Configuration AT réalisée avec succès
+[INFO][12:31:21][xbee] Thread d'écoute démarré
+[INFO][12:31:23][xbee] Données reçues : 0x1 0xa 0xf5 0x3 0x1 0x8 0 0xf4 0 0x4 
+[INFO][12:31:23][xbee] Trame envoyée avec succès : 0x1 0x2f 0xd0 0x1 0x3 0x9 0 0xf5 0x17 0x35 0 0x4c 0 0x58 0 0x21 0 0x9b 0x17 0 0xdc 0 0x37 0 0 0 0 0x3c 0x1 0x58 0 0x74 0 0 0x1 0x5f 0x3c 0 0xa1 0 0 0 0x2a 0 0 0x88 0x4 
+[INFO][12:31:31][xbee] Buffer Rx nettoyé avec succès
+[INFO][12:31:31][xbee] Connexion série fermée avec succès
+[INFO][12:33:11][xbee] Connexion ouverte avec succès sur le port /dev/ttyS0
+[INFO][12:33:11][xbee] Entrée en mode AT en cours...
+[INFO][12:33:14][xbee] Réponse du XBee : OK
+[INFO][12:33:14][xbee] Entrée dans le mode AT
+[INFO][12:33:14][xbee] Envoi de la commande AT : ATBD
+[INFO][12:33:14][xbee] Réponse du XBee : 3
+[INFO][12:33:14][xbee] Vaudrate vérifié avec succès
+[INFO][12:33:14][xbee] Envoi de la commande AT : ATNB
+[INFO][12:33:14][xbee] Réponse du XBee : 0
+[INFO][12:33:14][xbee] Nombre de bits de parité vérifié avec succès
+[INFO][12:33:14][xbee] Envoi de la commande AT : ATAP
+[INFO][12:33:14][xbee] Réponse du XBee : 0
+[INFO][12:33:14][xbee] Mode API vérifié avec succès
+[INFO][12:33:14][xbee] Envoi de la commande AT : ATEE
+[INFO][12:33:14][xbee] Réponse du XBee : 1
+[INFO][12:33:14][xbee] Chiffrement AES vérifié avec succès
+[INFO][12:33:14][xbee] Envoi de la commande AT : ATKY=32303032
+[INFO][12:33:14][xbee] Réponse du XBee : OK
+[INFO][12:33:14][xbee] Clé de chiffrement configurée avec succès
+[INFO][12:33:14][xbee] Envoi de la commande AT : ATCH
+[INFO][12:33:14][xbee] Réponse du XBee : C
+[INFO][12:33:14][xbee] Canal de découverte réseau vérifié avec succès
+[INFO][12:33:14][xbee] Envoi de la commande AT : ATID
+[INFO][12:33:14][xbee] Réponse du XBee : 3332
+[INFO][12:33:14][xbee] ID du réseau vérifié avec succès
+[INFO][12:33:14][xbee] Envoi de la commande AT : ATCE
+[INFO][12:33:14][xbee] Réponse du XBee : 0
+[INFO][12:33:14][xbee] Mode coordinateur vérifié avec succès
+[INFO][12:33:14][xbee] Envoi de la commande AT : ATMY
+[INFO][12:33:15][xbee] Réponse du XBee : 3
+[INFO][12:33:15][xbee] Adresse source 16bits vérifiée avec succès
+[INFO][12:33:15][xbee] Envoi de la commande AT : ATDL
+[INFO][12:33:15][xbee] Réponse du XBee : FFFF
+[INFO][12:33:15][xbee] Adresse de destination vérifiée avec succès
+[INFO][12:33:15][xbee] Envoi de la commande AT : ATDH
+[INFO][12:33:15][xbee] Réponse du XBee : 0
+[INFO][12:33:15][xbee] Adresse de destination vérifiée avec succès
+[INFO][12:33:15][xbee] Ecriture des paramètres AT dans la mémoire
+[INFO][12:33:15][xbee] Réponse du XBee : OK
+[INFO][12:33:15][xbee] Configuration AT enregistrée dans la mémoire du module
+[INFO][12:33:15][xbee] Sortie du mode AT
+[INFO][12:33:15][xbee] Réponse du XBee : OK
+[INFO][12:33:15][xbee] Configuration AT réalisée avec succès
+[INFO][12:33:15][xbee] Thread d'écoute démarré
+[INFO][12:33:17][xbee] Données reçues : 0x1 0xa 0xf5 0x3 0x1 0x8 0 0xf4 0 0x4 
+[INFO][12:33:17][xbee] Trame envoyée avec succès : 0x1 0x1d 0xe2 0x1 0x3 0x9 0 0xf5 0x17 0x17 0 0xdc 0 0x37 0 0 0 0 0x35 0 0x89 0 0x85 0 0 0 0x69 0xbb 0x4 
+[INFO][12:33:25][xbee] Buffer Rx nettoyé avec succès
+[INFO][12:33:25][xbee] Connexion série fermée avec succès

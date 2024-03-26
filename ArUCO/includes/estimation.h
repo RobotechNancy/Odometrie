@@ -24,8 +24,9 @@ private:
 
     float markerLen;
     int refMarkerId;
+    cv::Vec3d refMarkerPos;
 
-    cv::Vec3d origin;
+    cv::Vec3d origint, originr;
     cv::Mat image, cameraMatrix, distCoeffs;
 
     std::mutex mtx;
@@ -36,3 +37,4 @@ private:
 
 
 #endif //OPENCV_ESTIMATION_H
+

@@ -5,14 +5,25 @@ board_save_path: ../data/board.yml
 detector_params_path: ../data/detector_params.yml
 camera_params_path: ../data/camera_params.yml
 
-xbee_port: /dev/ttyUSB0   # /dev/ttyS0 (RPi) ou /dev/ttyUSB0 (PC)
-xbee_address: 4           # 4 (Robot 1), 5 (Robot 2), 6 (Camera 1), 7 (Camera 2) ou 8 (Camera 3)
-
-markers_x: 4              # Nombre de marqueurs en largeur
-markers_y: 4              # Nombre de marqueurs en hauteur
-marker_length_px: 100     # Longueur d'un marqueur en pixels
-markers_spacing_px: 20    # Espacement entre deux marqueurs en pixels
-marker_length_m: 0.07     # Longueur d'un marqueur en mètres
-markers_spacing_m: 0.1    # Espacement entre deux marqueurs en mètres
-ref_marker_id: 0          # ID du marqueur de référence
-dictionary: 1             # Dictionnaire de marqueurs (ici 100 marqueurs 4x4)
+# /dev/ttyS0 (RPi) ou /dev/ttyUSB0 (PC)
+xbee_port: /dev/ttyS0
+xbee_address: 6
+# 4 (Robot 1), 5 (Robot 2), 6 (Camera 1), 7 (Camera 2) ou 8 (Camera 3)
+markers_x: 4 
+# Nombre de marqueurs en largeur
+markers_y: 4 
+# Nombre de marqueurs en hauteur
+marker_length_px: 100 
+# Longueur d'un marqueur en pixels
+markers_spacing_px: 20 
+# Espacement entre deux marqueurs en pixels
+marker_length_m: 0.07 
+# Longueur d'un marqueur en mètres
+markers_spacing_m: 0.1 
+# Espacement entre deux marqueurs en mètres
+ref_marker_id: 23 
+# ID du marqueur de référence
+ref_marker_pos: [2.201,0.551,0] 
+# Position du marueur de référence
+dictionary: 1
+# Dictionnaire de marqueurs (ici 100 marqueurs 4x4)

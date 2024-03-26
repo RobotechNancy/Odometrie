@@ -11,6 +11,7 @@
 
 
 void boardToPng(const cv::FileStorage& configFile) {
+    // On récupère les paramètres de la grille
     int markersX = (int) configFile["markers_x"];
     int markersY = (int) configFile["markers_y"];
     int markerLen = (int) configFile["marker_length_px"];
@@ -24,12 +25,14 @@ void boardToPng(const cv::FileStorage& configFile) {
     imageSize.width = markersX * (markerLen + markerLen) - markerSep + 2 * margins;
     imageSize.height = markersY * (markerLen + markerSep) - markerSep + 2 * margins;
 
-    cv::aruco::Dictionary dictionary = getPredefinedDictionary(cv::aruco::DICT_4X4_50);
+    // On génère la grille à partir des paramètres et du dictionnaire choisi
+    cv::aruco::Dictionary dictionary = cv::aruco::getPredefinedDictionary((int) configFile["dictionary"]);
     cv::aruco::GridBoard b(cv::Size(markersX, markersY), float(markerLen), float(markerSep), dictionary);
 
     cv::Mat boardImage;
     b.generateImage(imageSize, boardImage, margins, borderBits);
 
+    // On montre la grille et on attend une touche pour la sauvegarder
     cv::imshow("board", boardImage);
     cv::waitKey(0);
 
@@ -38,11 +41,12 @@ void boardToPng(const cv::FileStorage& configFile) {
 }
 
 
+// Script adapté des tutoriels OpenCV
 uint8_t calibrate(const cv::FileStorage& configFile) {
     Camera camera(configFile);
 
     cv::Size imgSize;
-    cv::Mat img, imgCopy;
+    cv::Mat img, imgCopy; // On utilise img pour les calculs et imgCopy pour l'affichage avec réalité augmentée
 
     std::vector<int> calib_ids;
     std::vector<std::vector<int>> allIds;
@@ -50,6 +54,7 @@ uint8_t calibrate(const cv::FileStorage& configFile) {
     std::vector<std::vector<cv::Point2f>> corners;
     std::vector<std::vector<std::vector<cv::Point2f>>> allCorners;
 
+    // Boucle pour récupérer les données de calibration
     while (true) {
         camera.cap >> img;
         img.copyTo(imgCopy);
@@ -61,9 +66,11 @@ uint8_t calibrate(const cv::FileStorage& configFile) {
         imshow("out", imgCopy);
         char key = (char) cv::waitKey(10);
 
+        // On quitte si on appuie sur 'esc'
         if (key == 27)
             break;
 
+        // On mémorise les données de calibration si on appuie sur 'c'
         if (key == 'c' && !calib_ids.empty()) {
             std::cout << "Image capturée" << std::endl;
             allCorners.push_back(corners);
@@ -84,6 +91,7 @@ uint8_t calibrate(const cv::FileStorage& configFile) {
         return -1;
     }
 
+    // Paramètres de caméra (vides pour l'instant)
     cv::Mat cameraMatrix, distCoeffs;
     std::vector<cv::Mat> calib_rvecs, calib_tvecs;
     double repError;
@@ -93,6 +101,7 @@ uint8_t calibrate(const cv::FileStorage& configFile) {
     std::vector<int> markerCounterPerFrame;
     markerCounterPerFrame.reserve(allCorners.size());
 
+    // On concatène les vecteurs de vecteurs de points et d'ids
     for (unsigned int i = 0; i < allCorners.size(); i++) {
         markerCounterPerFrame.push_back((int) allCorners[i].size());
 
@@ -102,7 +111,8 @@ uint8_t calibrate(const cv::FileStorage& configFile) {
         }
     }
 
-    cv::aruco::GridBoard gridBoard(
+    // On recrée la grille à partir des paramètres et du dictionnaire choisi
+    cv::Ptr<cv::aruco::GridBoard> gridBoard = new cv::aruco::GridBoard(
             cv::Size(
                     (int) configFile["markers_x"],
                     (int) configFile["markers_y"]
@@ -112,14 +122,17 @@ uint8_t calibrate(const cv::FileStorage& configFile) {
             camera.detector.getDictionary()
     );
 
+    // On calcule les paramètres de caméra à partir des captures et de la grille recréée
     repError = calibrateCameraAruco(allCornersConcatenated, allIdsConcatenated,
-                                    markerCounterPerFrame, &gridBoard, imgSize, cameraMatrix,
+                                    markerCounterPerFrame, gridBoard, imgSize, cameraMatrix,
                                     distCoeffs, calib_rvecs, calib_tvecs, 0);
 
-    cv::FileStorage fs("../camera_params.yml", cv::FileStorage::WRITE);
+    // On enregistre les paramètres de caméra dans un fichier YAML
+    std::string cameraParamsPath = (std::string) configFile["camera_params_path"];
+    cv::FileStorage fs(cameraParamsPath, cv::FileStorage::WRITE);
 
     if (!fs.isOpened()) {
-        std::cerr << "Impossible de créer le fichier \"camera_params.yml\"" << std::endl;
+        std::cerr << "Impossible de créer le fichier " << cameraParamsPath << std::endl;
         return -1;
     }
 
@@ -138,7 +151,7 @@ uint8_t calibrate(const cv::FileStorage& configFile) {
     fs << "distortion_coefficients" << distCoeffs;
     fs << "avg_reprojection_error" << repError;
 
-    std::cout << "Paramètres de caméra enregistrés dans \"camera_params.yml\"" << std::endl;
+    std::cout << "Paramètres de caméra enregistrés dans " << cameraParamsPath << std::endl;
 
     return 0;
 }
