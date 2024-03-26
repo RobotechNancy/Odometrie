@@ -27,20 +27,24 @@ void Estimation::update() {
     if (ids.empty())
         return;
 
+
 //Bloquage pour eviter de reecrire sur des données qui sont en train d'etre envoyées
     mtx.lock();
+
     cv::aruco::estimatePoseSingleMarkers(
             corners, markerLen,
             cameraMatrix, distCoeffs,
             rVecs, tVecs
     );
 
+    // On récupère la position du marqueur de référence
     for(int i=0; i < ids.size(); i++)
         if (ids[i] == refMarkerId) {
             origint = tVecs[i];
             originr = rVecs[i];
             break;
         }
+
 
     for (int i=0; i < ids.size(); i++){
         for (int j = 0; j < 3; j++){
@@ -51,24 +55,26 @@ void Estimation::update() {
     std::cout << "rVecs[" << i << "][2] =" << rVecs[i][2] << std::endl;
     }
     mtx.unlock();
+
 }
 
 
 void Estimation::send(XBee& xbee, uint8_t dest) {
-    mtx.lock();
-
     uint16_t temp;
     std::vector<uint8_t> data;
+
 
     data.push_back(refMarkerId);
 
     for (int i=0; i < ids.size(); i++) {  
         data.push_back(ids[i]);
 
-        for (int j=0; j < 3; j++) {
-            temp = (uint16_t) (tVecs[i][j] * 1000);
-            data.push_back((uint8_t) (temp >> 8));
-            data.push_back((uint8_t) temp);
+
+            for (int j = 0; j < 3; j++) {
+                temp = (uint16_t) (tVecs[i][j] * 1000); // Conversion en mm
+                data.push_back((uint8_t) (temp >> 8));  // ⎡ On ne peut qu'envoyer octets par octets
+                data.push_back((uint8_t) temp);         // ⎣ Donc on sépare les 16 bits en 2 octets
+            }
         }
 
         temp = (uint16_t) (rVecs[i][2]*1000);
@@ -76,7 +82,9 @@ void Estimation::send(XBee& xbee, uint8_t dest) {
         data.push_back((uint8_t) temp);
     }
 
+
     xbee.send(dest, XB_FCT_ARUCO_POS, data, ids.size()*4);
     mtx.unlock();
+
 }
 

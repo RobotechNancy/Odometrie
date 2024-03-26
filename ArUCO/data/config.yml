@@ -1,9 +1,10 @@
 %YAML:1.0
 ---
 
-board_save_path: ../data/board.yml
+board_save_path: ../data/board.webp
 detector_params_path: ../data/detector_params.yml
 camera_params_path: ../data/camera_params.yml
+
 
 # /dev/ttyS0 (RPi) ou /dev/ttyUSB0 (PC)
 xbee_port: /dev/ttyS0
@@ -27,3 +28,4 @@ ref_marker_pos: [2.201,0.551,0]
 # Position du marueur de référence
 dictionary: 1
 # Dictionnaire de marqueurs (ici 100 marqueurs 4x4)
+
