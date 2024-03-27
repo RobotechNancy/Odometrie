@@ -51,7 +51,8 @@ int main(int argc, char** argv) {
 
     int status = xbee.openSerialConnection(
             fs["xbee_port"].string().c_str(),
-            (int) fs["xbee_address"]
+            (int) fs["xbee_address"]main.cpp.o
+
     );
 
 
@@ -63,4 +64,5 @@ int main(int argc, char** argv) {
         estimation.update();
         estimation.send(xbee, frame.emitterAddress);
     });
+    */
 }
