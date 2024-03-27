@@ -10,7 +10,6 @@
 #include <opencv2/objdetect/aruco_detector.hpp>
 
 
-// Classe commune à la calibration et à l'estimation contenant les paramètres de la caméra
 class Camera {
 public:
     explicit Camera(const cv::FileStorage& configFile);

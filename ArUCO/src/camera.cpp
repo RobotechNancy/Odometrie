@@ -7,7 +7,6 @@
 
 
 Camera::Camera(const cv::FileStorage& configFile) {
-    // 0 -> utiliser la caméra par défaut
     cap = cv::VideoCapture(0);
 
     if (!cap.isOpened()) {
@@ -25,12 +24,12 @@ Camera::Camera(const cv::FileStorage& configFile) {
         exit(-1);
     }
 
-    // On récupère les paramètres du détecteur à partir de "detector_params_path"
     cv::aruco::DetectorParameters detectorParams;
     detectorParams.readDetectorParameters(fs.root());
     fs.release();
 
-    // Dictionnaire contenant les marqueurs détectables
-    detector.setDictionary(cv::aruco::getPredefinedDictionary((int) configFile["dictionary"]));
+    detector.setDictionary(
+            cv::aruco::getPredefinedDictionary((int) configFile["dictionary"])
+    );
     detector.setDetectorParameters(detectorParams);
 }

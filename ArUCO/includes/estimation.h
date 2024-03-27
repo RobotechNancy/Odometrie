@@ -9,27 +9,29 @@
 #include "robotech/xbee.h"
 
 
+/*!
+ * @brief Classe pour l'estimation de la position des marqueurs
+ * @details Estimation(markerLen)
+ */
 class Estimation {
 public:
-    explicit Estimation(const cv::FileStorage& configFile);  // Prend le chemin vers config.yml en paramètre
-    void update();                                           // Mettre à jour tVecs et rVecs
-    void send(XBee& xbee, uint8_t dest);                     // Envoyer les données à un destinataire
+    explicit Estimation(const cv::FileStorage& configFile, int refMid, cv::Vec3d refMarkerPos);
+
+    void update();
+    void send(XBee& xbee, uint8_t dest);
+    bool cameraPosition();
 private:
     Camera camera;
 
-
     float markerLen;
     int refMarkerId;
-    cv::Vec3d refMarkerPos;
-
-    cv::Vec3d origint, originr;
-
+    cv::Vec3d refMarkerPos, origint, originr;
     cv::Mat image, cameraMatrix, distCoeffs;
 
-    std::mutex mtx;                                          // Évite les accès simultanés à tVecs et rVecs
-    std::vector<int> ids;                                    // ⎡
-    std::vector<cv::Vec3d> rVecs, tVecs;                     // | Données de la dernière détection
-    std::vector<std::vector<cv::Point2f>> corners;           // ⎣
+    std::mutex mtx;
+    std::vector<int> ids;
+    std::vector<cv::Vec3d> rVecs, tVecs;
+    std::vector<std::vector<cv::Point2f>> corners;
 };
 
 

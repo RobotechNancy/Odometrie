@@ -6,9 +6,8 @@
 
 #include "camera.h"
 #include "calibration.h"
-#include <opencv2/aruco.hpp>
+#include "opencv2/aruco.hpp"
 #include <opencv2/highgui.hpp>
-#include <opencv2/objdetect/aruco_board.hpp>
 
 
 void boardToPng(const cv::FileStorage& configFile) {
