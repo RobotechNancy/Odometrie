@@ -109,7 +109,11 @@ void Estimation::send(XBee& xbee, uint8_t dest) {
             data.push_back((uint8_t) temp);
         }
 
-        temp = (uint16_t) (rVecs[i][2]*1000);
+        //Signe de l'orientation
+        //temp = (uint16_t) 
+        //data.push_back((uint8_t) temp);
+
+        temp = (uint16_t) (abs(rVecs[i][2])*1000);
         //Pousse l'orientation dans les données (séparé en deux octets pour être assez grand)
         data.push_back((uint8_t) (temp >> 8));
         data.push_back((uint8_t) temp);
