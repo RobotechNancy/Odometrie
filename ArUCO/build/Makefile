@@ -169,6 +169,33 @@ main.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/ArUCO.dir/build.make CMakeFiles/ArUCO.dir/main.cpp.s
 .PHONY : main.cpp.s
 
+src/calculsfct.o: src/calculsfct.cpp.o
+
+.PHONY : src/calculsfct.o
+
+# target to build an object file
+src/calculsfct.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ArUCO.dir/build.make CMakeFiles/ArUCO.dir/src/calculsfct.cpp.o
+.PHONY : src/calculsfct.cpp.o
+
+src/calculsfct.i: src/calculsfct.cpp.i
+
+.PHONY : src/calculsfct.i
+
+# target to preprocess a source file
+src/calculsfct.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ArUCO.dir/build.make CMakeFiles/ArUCO.dir/src/calculsfct.cpp.i
+.PHONY : src/calculsfct.cpp.i
+
+src/calculsfct.s: src/calculsfct.cpp.s
+
+.PHONY : src/calculsfct.s
+
+# target to generate assembly for a file
+src/calculsfct.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ArUCO.dir/build.make CMakeFiles/ArUCO.dir/src/calculsfct.cpp.s
+.PHONY : src/calculsfct.cpp.s
+
 src/calibration.o: src/calibration.cpp.o
 
 .PHONY : src/calibration.o
@@ -250,6 +277,33 @@ src/estimation.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/ArUCO.dir/build.make CMakeFiles/ArUCO.dir/src/estimation.cpp.s
 .PHONY : src/estimation.cpp.s
 
+src/tests.o: src/tests.cpp.o
+
+.PHONY : src/tests.o
+
+# target to build an object file
+src/tests.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ArUCO.dir/build.make CMakeFiles/ArUCO.dir/src/tests.cpp.o
+.PHONY : src/tests.cpp.o
+
+src/tests.i: src/tests.cpp.i
+
+.PHONY : src/tests.i
+
+# target to preprocess a source file
+src/tests.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ArUCO.dir/build.make CMakeFiles/ArUCO.dir/src/tests.cpp.i
+.PHONY : src/tests.cpp.i
+
+src/tests.s: src/tests.cpp.s
+
+.PHONY : src/tests.s
+
+# target to generate assembly for a file
+src/tests.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ArUCO.dir/build.make CMakeFiles/ArUCO.dir/src/tests.cpp.s
+.PHONY : src/tests.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -262,6 +316,9 @@ help:
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
+	@echo "... src/calculsfct.o"
+	@echo "... src/calculsfct.i"
+	@echo "... src/calculsfct.s"
 	@echo "... src/calibration.o"
 	@echo "... src/calibration.i"
 	@echo "... src/calibration.s"
@@ -271,6 +328,9 @@ help:
 	@echo "... src/estimation.o"
 	@echo "... src/estimation.i"
 	@echo "... src/estimation.s"
+	@echo "... src/tests.o"
+	@echo "... src/tests.i"
+	@echo "... src/tests.s"
 .PHONY : help
 
 

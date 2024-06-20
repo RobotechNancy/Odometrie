@@ -8,12 +8,10 @@
 
 Camera::Camera(const cv::FileStorage& configFile) {
     cap = cv::VideoCapture(0);
-
     if (!cap.isOpened()) {
         std::cerr << "Impossible d'ouvrir la caméra" << std::endl;
         exit(-1);
     }
-
     cv::FileStorage fs(
             configFile["detector_params_path"],
             cv::FileStorage::READ

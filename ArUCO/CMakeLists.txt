@@ -13,6 +13,8 @@ add_executable(ArUCO
         includes/camera.h src/camera.cpp
         includes/calibration.h src/calibration.cpp
         includes/estimation.h src/estimation.cpp
+        includes/calculsfct.h src/calculsfct.cpp
+        includes/tests.h src/tests.cpp
 )
 
 target_link_libraries(ArUCO ${OpenCV_LIBRARIES} ${XBee_LIBRARIES} Threads::Threads)

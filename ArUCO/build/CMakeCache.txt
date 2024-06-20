@@ -218,14 +218,8 @@ CMAKE_VERBOSE_MAKEFILE:BOOL=FALSE
 //The directory containing a CMake configuration file for OpenCV.
 OpenCV_DIR:PATH=/usr/local/lib/arm-linux-gnueabihf/cmake/opencv4
 
-//pkg-config executable
-PKG_CONFIG_EXECUTABLE:FILEPATH=/usr/bin/pkg-config
-
-//Path to a library.
-pkgcfg_lib_XBee_Logs:FILEPATH=/usr/local/lib/arm-linux-gnueabihf/libLogs.a
-
-//Path to a library.
-pkgcfg_lib_XBee_XBee:FILEPATH=/usr/local/lib/arm-linux-gnueabihf/libXBee.a
+//The directory containing a CMake configuration file for XBee.
+XBee_DIR:PATH=/usr/local/share/XBee/cmake
 
 
 ########################
@@ -384,53 +378,7 @@ CMAKE_UNAME:INTERNAL=/usr/bin/uname
 //ADVANCED property for variable: CMAKE_VERBOSE_MAKEFILE
 CMAKE_VERBOSE_MAKEFILE-ADVANCED:INTERNAL=1
 //Details about finding OpenCV
-FIND_PACKAGE_MESSAGE_DETAILS_OpenCV:INTERNAL=[/usr/local][v4.7.0()]
-//Details about finding PkgConfig
-FIND_PACKAGE_MESSAGE_DETAILS_PkgConfig:INTERNAL=[/usr/bin/pkg-config][v0.29.2()]
+FIND_PACKAGE_MESSAGE_DETAILS_OpenCV:INTERNAL=[/usr/local][v4.9.0()]
 //Details about finding Threads
 FIND_PACKAGE_MESSAGE_DETAILS_Threads:INTERNAL=[TRUE][v()]
-//ADVANCED property for variable: PKG_CONFIG_EXECUTABLE
-PKG_CONFIG_EXECUTABLE-ADVANCED:INTERNAL=1
-XBee_CFLAGS:INTERNAL=-I/usr/local/include
-XBee_CFLAGS_I:INTERNAL=
-XBee_CFLAGS_OTHER:INTERNAL=
-XBee_FOUND:INTERNAL=1
-XBee_INCLUDEDIR:INTERNAL=/usr/local/include
-XBee_INCLUDE_DIRS:INTERNAL=/usr/local/include
-XBee_LDFLAGS:INTERNAL=-L/usr/local/lib/arm-linux-gnueabihf;-lXBee;-lLogs
-XBee_LDFLAGS_OTHER:INTERNAL=
-XBee_LIBDIR:INTERNAL=/usr/local/lib/arm-linux-gnueabihf
-XBee_LIBRARIES:INTERNAL=XBee;Logs
-XBee_LIBRARY_DIRS:INTERNAL=/usr/local/lib/arm-linux-gnueabihf
-XBee_LIBS:INTERNAL=
-XBee_LIBS_L:INTERNAL=
-XBee_LIBS_OTHER:INTERNAL=
-XBee_LIBS_PATHS:INTERNAL=
-XBee_MODULE_NAME:INTERNAL=XBee
-XBee_PREFIX:INTERNAL=/usr/local
-XBee_STATIC_CFLAGS:INTERNAL=-I/usr/local/include
-XBee_STATIC_CFLAGS_I:INTERNAL=
-XBee_STATIC_CFLAGS_OTHER:INTERNAL=
-XBee_STATIC_INCLUDE_DIRS:INTERNAL=/usr/local/include
-XBee_STATIC_LDFLAGS:INTERNAL=-L/usr/local/lib/arm-linux-gnueabihf;-lXBee;-lLogs
-XBee_STATIC_LDFLAGS_OTHER:INTERNAL=
-XBee_STATIC_LIBDIR:INTERNAL=
-XBee_STATIC_LIBRARIES:INTERNAL=XBee;Logs
-XBee_STATIC_LIBRARY_DIRS:INTERNAL=/usr/local/lib/arm-linux-gnueabihf
-XBee_STATIC_LIBS:INTERNAL=
-XBee_STATIC_LIBS_L:INTERNAL=
-XBee_STATIC_LIBS_OTHER:INTERNAL=
-XBee_STATIC_LIBS_PATHS:INTERNAL=
-XBee_VERSION:INTERNAL=0.1
-XBee_XBee_INCLUDEDIR:INTERNAL=
-XBee_XBee_LIBDIR:INTERNAL=
-XBee_XBee_PREFIX:INTERNAL=
-XBee_XBee_VERSION:INTERNAL=
-__pkg_config_arguments_XBee:INTERNAL=REQUIRED;XBee
-__pkg_config_checked_XBee:INTERNAL=1
-//ADVANCED property for variable: pkgcfg_lib_XBee_Logs
-pkgcfg_lib_XBee_Logs-ADVANCED:INTERNAL=1
-//ADVANCED property for variable: pkgcfg_lib_XBee_XBee
-pkgcfg_lib_XBee_XBee-ADVANCED:INTERNAL=1
-prefix_result:INTERNAL=/usr/local/lib/arm-linux-gnueabihf
 

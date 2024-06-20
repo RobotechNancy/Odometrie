@@ -128,12 +128,40 @@ CMakeFiles/ArUCO.dir/src/estimation.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ArUCO.dir/src/estimation.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/robotech/Odometrie/ArUCO/src/estimation.cpp -o CMakeFiles/ArUCO.dir/src/estimation.cpp.s
 
+CMakeFiles/ArUCO.dir/src/calculsfct.cpp.o: CMakeFiles/ArUCO.dir/flags.make
+CMakeFiles/ArUCO.dir/src/calculsfct.cpp.o: ../src/calculsfct.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/robotech/Odometrie/ArUCO/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/ArUCO.dir/src/calculsfct.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ArUCO.dir/src/calculsfct.cpp.o -c /home/robotech/Odometrie/ArUCO/src/calculsfct.cpp
+
+CMakeFiles/ArUCO.dir/src/calculsfct.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ArUCO.dir/src/calculsfct.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/robotech/Odometrie/ArUCO/src/calculsfct.cpp > CMakeFiles/ArUCO.dir/src/calculsfct.cpp.i
+
+CMakeFiles/ArUCO.dir/src/calculsfct.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ArUCO.dir/src/calculsfct.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/robotech/Odometrie/ArUCO/src/calculsfct.cpp -o CMakeFiles/ArUCO.dir/src/calculsfct.cpp.s
+
+CMakeFiles/ArUCO.dir/src/tests.cpp.o: CMakeFiles/ArUCO.dir/flags.make
+CMakeFiles/ArUCO.dir/src/tests.cpp.o: ../src/tests.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/robotech/Odometrie/ArUCO/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/ArUCO.dir/src/tests.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ArUCO.dir/src/tests.cpp.o -c /home/robotech/Odometrie/ArUCO/src/tests.cpp
+
+CMakeFiles/ArUCO.dir/src/tests.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ArUCO.dir/src/tests.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/robotech/Odometrie/ArUCO/src/tests.cpp > CMakeFiles/ArUCO.dir/src/tests.cpp.i
+
+CMakeFiles/ArUCO.dir/src/tests.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ArUCO.dir/src/tests.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/robotech/Odometrie/ArUCO/src/tests.cpp -o CMakeFiles/ArUCO.dir/src/tests.cpp.s
+
 # Object files for target ArUCO
 ArUCO_OBJECTS = \
 "CMakeFiles/ArUCO.dir/main.cpp.o" \
 "CMakeFiles/ArUCO.dir/src/camera.cpp.o" \
 "CMakeFiles/ArUCO.dir/src/calibration.cpp.o" \
-"CMakeFiles/ArUCO.dir/src/estimation.cpp.o"
+"CMakeFiles/ArUCO.dir/src/estimation.cpp.o" \
+"CMakeFiles/ArUCO.dir/src/calculsfct.cpp.o" \
+"CMakeFiles/ArUCO.dir/src/tests.cpp.o"
 
 # External object files for target ArUCO
 ArUCO_EXTERNAL_OBJECTS =
@@ -142,25 +170,28 @@ ArUCO: CMakeFiles/ArUCO.dir/main.cpp.o
 ArUCO: CMakeFiles/ArUCO.dir/src/camera.cpp.o
 ArUCO: CMakeFiles/ArUCO.dir/src/calibration.cpp.o
 ArUCO: CMakeFiles/ArUCO.dir/src/estimation.cpp.o
+ArUCO: CMakeFiles/ArUCO.dir/src/calculsfct.cpp.o
+ArUCO: CMakeFiles/ArUCO.dir/src/tests.cpp.o
 ArUCO: CMakeFiles/ArUCO.dir/build.make
-ArUCO: /usr/local/lib/arm-linux-gnueabihf/libopencv_gapi.so.4.7.0
-ArUCO: /usr/local/lib/arm-linux-gnueabihf/libopencv_highgui.so.4.7.0
-ArUCO: /usr/local/lib/arm-linux-gnueabihf/libopencv_ml.so.4.7.0
-ArUCO: /usr/local/lib/arm-linux-gnueabihf/libopencv_photo.so.4.7.0
-ArUCO: /usr/local/lib/arm-linux-gnueabihf/libopencv_stitching.so.4.7.0
-ArUCO: /usr/local/lib/arm-linux-gnueabihf/libopencv_video.so.4.7.0
-ArUCO: /usr/local/lib/arm-linux-gnueabihf/libopencv_videoio.so.4.7.0
-ArUCO: /usr/local/lib/arm-linux-gnueabihf/libopencv_aruco.so.4.7.0
-ArUCO: /usr/local/lib/arm-linux-gnueabihf/libopencv_imgcodecs.so.4.7.0
-ArUCO: /usr/local/lib/arm-linux-gnueabihf/libopencv_objdetect.so.4.7.0
-ArUCO: /usr/local/lib/arm-linux-gnueabihf/libopencv_calib3d.so.4.7.0
-ArUCO: /usr/local/lib/arm-linux-gnueabihf/libopencv_dnn.so.4.7.0
-ArUCO: /usr/local/lib/arm-linux-gnueabihf/libopencv_features2d.so.4.7.0
-ArUCO: /usr/local/lib/arm-linux-gnueabihf/libopencv_flann.so.4.7.0
-ArUCO: /usr/local/lib/arm-linux-gnueabihf/libopencv_imgproc.so.4.7.0
-ArUCO: /usr/local/lib/arm-linux-gnueabihf/libopencv_core.so.4.7.0
+ArUCO: /usr/local/lib/arm-linux-gnueabihf/libopencv_gapi.so.4.9.0
+ArUCO: /usr/local/lib/arm-linux-gnueabihf/libopencv_highgui.so.4.9.0
+ArUCO: /usr/local/lib/arm-linux-gnueabihf/libopencv_ml.so.4.9.0
+ArUCO: /usr/local/lib/arm-linux-gnueabihf/libopencv_photo.so.4.9.0
+ArUCO: /usr/local/lib/arm-linux-gnueabihf/libopencv_stitching.so.4.9.0
+ArUCO: /usr/local/lib/arm-linux-gnueabihf/libopencv_video.so.4.9.0
+ArUCO: /usr/local/lib/arm-linux-gnueabihf/libopencv_videoio.so.4.9.0
+ArUCO: /usr/local/lib/arm-linux-gnueabihf/libopencv_aruco.so.4.9.0
+ArUCO: /usr/local/lib/arm-linux-gnueabihf/libXBee.a
+ArUCO: /usr/local/lib/arm-linux-gnueabihf/libopencv_imgcodecs.so.4.9.0
+ArUCO: /usr/local/lib/arm-linux-gnueabihf/libopencv_objdetect.so.4.9.0
+ArUCO: /usr/local/lib/arm-linux-gnueabihf/libopencv_calib3d.so.4.9.0
+ArUCO: /usr/local/lib/arm-linux-gnueabihf/libopencv_dnn.so.4.9.0
+ArUCO: /usr/local/lib/arm-linux-gnueabihf/libopencv_features2d.so.4.9.0
+ArUCO: /usr/local/lib/arm-linux-gnueabihf/libopencv_flann.so.4.9.0
+ArUCO: /usr/local/lib/arm-linux-gnueabihf/libopencv_imgproc.so.4.9.0
+ArUCO: /usr/local/lib/arm-linux-gnueabihf/libopencv_core.so.4.9.0
 ArUCO: CMakeFiles/ArUCO.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/robotech/Odometrie/ArUCO/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking CXX executable ArUCO"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/robotech/Odometrie/ArUCO/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Linking CXX executable ArUCO"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/ArUCO.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

@@ -93,12 +93,12 @@ clean: CMakeFiles/ArUCO.dir/clean
 CMakeFiles/ArUCO.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/ArUCO.dir/build.make CMakeFiles/ArUCO.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/ArUCO.dir/build.make CMakeFiles/ArUCO.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/robotech/Odometrie/ArUCO/build/CMakeFiles --progress-num=1,2,3,4,5 "Built target ArUCO"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/robotech/Odometrie/ArUCO/build/CMakeFiles --progress-num=1,2,3,4,5,6,7 "Built target ArUCO"
 .PHONY : CMakeFiles/ArUCO.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/ArUCO.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/robotech/Odometrie/ArUCO/build/CMakeFiles 5
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/robotech/Odometrie/ArUCO/build/CMakeFiles 7
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/ArUCO.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/robotech/Odometrie/ArUCO/build/CMakeFiles 0
 .PHONY : CMakeFiles/ArUCO.dir/rule

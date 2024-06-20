@@ -6,6 +6,10 @@
 
 #IncludeRegexTransform: 
 
+../includes/calibration.h
+opencv2/core/persistence.hpp
+-
+
 ../includes/camera.h
 opencv2/videoio.hpp
 -
@@ -20,21 +24,17 @@ camera.h
 robotech/xbee.h
 ../includes/robotech/xbee.h
 
-/home/robotech/Odometrie/ArUCO/src/estimation.cpp
-opencv2/aruco.hpp
--
+../includes/tests.h
+camera.h
+../includes/camera.h
+
+/home/robotech/Odometrie/ArUCO/main.cpp
 estimation.h
-/home/robotech/Odometrie/ArUCO/src/estimation.h
-
-/usr/local/include/opencv4/opencv2/aruco.hpp
-opencv2/objdetect/aruco_detector.hpp
-/usr/local/include/opencv4/opencv2/opencv2/objdetect/aruco_detector.hpp
-opencv2/aruco/aruco_calib.hpp
-/usr/local/include/opencv4/opencv2/opencv2/aruco/aruco_calib.hpp
-
-/usr/local/include/opencv4/opencv2/aruco/aruco_calib.hpp
-opencv2/objdetect/aruco_board.hpp
--
+/home/robotech/Odometrie/ArUCO/estimation.h
+calibration.h
+/home/robotech/Odometrie/ArUCO/calibration.h
+tests.h
+/home/robotech/Odometrie/ArUCO/tests.h
 
 /usr/local/include/opencv4/opencv2/core.hpp
 opencv2/core/cvdef.h
@@ -125,14 +125,14 @@ arm_neon.h
 -
 arm_neon.h
 -
-riscv-vector.h
--
-arm_neon.h
+riscv_vector.h
 -
 altivec.h
 -
 hal/msa_macros.h
 /usr/local/include/opencv4/opencv2/core/hal/msa_macros.h
+lsxintrin.h
+-
 lasxintrin.h
 -
 wasm_simd128.h
@@ -169,11 +169,7 @@ cv_cpu_dispatch.h
 /usr/local/include/opencv4/opencv2/core/cv_cpu_dispatch.h
 intrin.h
 -
-array
--
 cstdint
--
-stdint.h
 -
 stdint.h
 -
@@ -259,6 +255,8 @@ opencv2/core/types.hpp
 /usr/local/include/opencv4/opencv2/core/opencv2/core/types.hpp
 opencv2/core/bufferpool.hpp
 /usr/local/include/opencv4/opencv2/core/opencv2/core/bufferpool.hpp
+array
+-
 type_traits
 -
 opencv2/core/mat.inl.hpp
@@ -277,6 +275,12 @@ opencv2/core/saturate.hpp
 /usr/local/include/opencv4/opencv2/core/opencv2/core/saturate.hpp
 initializer_list
 -
+opencv2/core/matx.inl.hpp
+/usr/local/include/opencv4/opencv2/core/opencv2/core/matx.inl.hpp
+
+/usr/local/include/opencv4/opencv2/core/matx.inl.hpp
+opencv2/core/matx.hpp
+/usr/local/include/opencv4/opencv2/core/opencv2/core/matx.hpp
 
 /usr/local/include/opencv4/opencv2/core/neon_utils.hpp
 opencv2/core/cvdef.h

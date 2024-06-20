@@ -21,9 +21,9 @@ marker_length_px: 100
 # Espacement entre deux marqueurs en pixels
 markers_spacing_px: 20 
 # Longueur d'un marqueur en mètres
-marker_length_m: 0.10 
+marker_length_m: 0.07 
 # Espacement entre deux marqueurs en mètres
-markers_spacing_m: 0.01 
+markers_spacing_m: 0.1 
 # Dictionnaire de marqueurs (ici 100 marqueurs 4x4)
 dictionary: 1
 
